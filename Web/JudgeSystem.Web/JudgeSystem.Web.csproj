@@ -1,0 +1,59 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <AllowUntrustedCertificate>True</AllowUntrustedCertificate>
+    <TargetFramework>net6.0</TargetFramework>
+    <UserSecretsId>aspnet-JudgeSystem-BBB373B5-EF3F-4DBB-B8AA-7152CEC275BF</UserSecretsId>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.S3" Version="3.7.201.4" />
+    <PackageReference Include="AWSSDK.SimpleEmail" Version="3.7.200.5" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.Azure.Storage.Blob" Version="10.0.3" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.6.0" />
+    <PackageReference Include="Microsoft.Extensions.ML" Version="0.14.0" />
+    <PackageReference Include="Microsoft.ML.Recommender" Version="0.14.0" />
+    <PackageReference Include="BuildBundlerMinifier" Version="2.9.406" />
+    <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.0.76" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.6.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights" Version="2.10.0" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.7.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="6.0.20" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.15" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\JudgeSystem.Data.Models\JudgeSystem.Data.Models.csproj" />
+    <ProjectReference Include="..\..\Data\JudgeSystem.Data\JudgeSystem.Data.csproj" />
+    <ProjectReference Include="..\..\Services\JudgeSystem.Services.Data\JudgeSystem.Services.Data.csproj" />
+    <ProjectReference Include="..\..\Services\JudgeSystem.Services.Mapping\JudgeSystem.Services.Mapping.csproj" />
+    <ProjectReference Include="..\..\Services\JudgeSystem.Services.Messaging\JudgeSystem.Services.Messaging.csproj" />
+    <ProjectReference Include="..\..\Services\JudgeSystem.Services.Models\JudgeSystem.Services.Models.csproj" />
+    <ProjectReference Include="..\..\Services\JudgeSystem.Services\JudgeSystem.Services.csproj" />
+    <ProjectReference Include="..\..\Workers\JudgeSystem.Compilers\JudgeSystem.Compilers.csproj" />
+    <ProjectReference Include="..\..\Workers\JudgeSystem.Executors\JudgeSystem.Executors.csproj" />
+    <ProjectReference Include="..\..\Workers\JudgeSystem.Workers.Common\JudgeSystem.Workers.Common.csproj" />
+    <ProjectReference Include="..\JudgeSystem.Web.Dtos\JudgeSystem.Web.Dtos.csproj" />
+    <ProjectReference Include="..\JudgeSystem.Web.Infrastructure\JudgeSystem.Web.Infrastructure.csproj" />
+    <ProjectReference Include="..\JudgeSystem.Web.InputModels\JudgeSystem.Web.InputModels.csproj" />
+    <ProjectReference Include="..\JudgeSystem.Web.ViewModels\JudgeSystem.Web.ViewModels.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="MLModels\JudgeSystemLessonsModel.zip">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="eadejccw.qnn\" />
+    <Folder Include="Resources\Areas\Administration\Controllers\" />
+    <Folder Include="Resources\Controllers\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,220 @@
+﻿@inject IViewLocalizer Localizer
+@inject IStringLocalizer<SharedResources> SharedLocalizer
+@model LessonViewModel
+
+@{
+    this.ViewData["Title"] = Model.Name;
+    int problemNumber = 0;
+    ProblemViewModel firstProblem = Model.Problems.FirstOrDefault();
+    string administrationArea = GlobalConstants.AdministrationArea;
+    IEnumerable<SelectListItem> programmingLangueages = Utility.GetSelectListOfProgrammingLangugages();
+}
+
+<h2 class="text-secondary text-center">@Model.Name</h2>
+@if (Model.ContestId.HasValue)
+{
+    <div class="d-flex justify-content-between">
+        <vc:contest-timer contest-id="@Model.ContestId.Value"></vc:contest-timer>
+        <div class="mt-5 font-size-20">
+            <a class="text-decoration-none text-secondary"
+               asp-controller="Contest" asp-action="Results" asp-route-id="@Model.ContestId">@Localizer["Contest results"]</a>
+        </div>
+    </div>
+}
+else
+{
+    <div class="d-flex justify-content-end">
+        <div class="mt-5 font-size-20">
+            <a class="text-decoration-none text-secondary"
+               asp-controller="Practice" asp-action="Results" asp-route-id="@Model.PracticeId">@SharedLocalizer["Results"]</a>
+        </div>
+    </div>
+}
+
+
+@if (Model.Resources.Count > 0 || User.IsInRole(GlobalConstants.AdministratorRoleName))
+{
+    <div class="ul-holder border shadow-sm text-secondary px-3 pb-3 pt-2">
+        <h4 class="mb-3 mt-0">@Localizer["Downlaod resources"]</h4>
+        <ul class="list-group d-flex flex-sm-row flex-wrap">
+            @foreach (var resource in Model.Resources)
+            {
+                <li class="list-group-item a-holder">
+                    <a asp-area="" asp-controller="Resource" asp-action="Download" asp-route-id="@resource.Id">@resource.Name</a>
+                </li>
+            }
+            @if (User.IsInRole(GlobalConstants.AdministratorRoleName))
+            {
+                <li class="list-group-item a-holder">
+                    <a asp-area="@administrationArea" asp-controller="Resource"
+                       asp-action="Create" asp-route-lessonId="@Model.Id" asp-route-practiceId="@Model.PracticeId">@SharedLocalizer["Add Resource"]</a>
+                </li>
+                <li class="list-group-item a-holder">
+                    <a asp-area="@administrationArea" asp-controller="Resource"
+                       asp-action="LessonResources" asp-route-lessonId="@Model.Id" asp-route-practiceId="@Model.PracticeId">@SharedLocalizer["All Resources"]</a>
+                </li>
+            }
+        </ul>
+    </div>
+}
+<div class="border p-3 bg-light">
+    <div class="ul-holder mt-0">
+        <ul class="list-group d-flex flex-wrap flex-sm-row">
+            @foreach (var problem in Model.Problems)
+            {
+                <li class="list-group-item problem-name" data-type="@problem.SubmissionType" data-id="@problem.Id">
+                    @($"{(++problemNumber).ToString("D2")}. {problem.Name}")
+                    @if (problem.IsExtraTask)
+                    {
+                        <span class="text-success ml-2 font-size-10"><i class="fas fa-star"></i></span>
+                    }
+                </li>
+            }
+            @if (User.IsInRole(GlobalConstants.AdministratorRoleName))
+            {
+                <li class="list-group-item a-holder">
+                    <a asp-area="@administrationArea" asp-controller="Problem"
+                       asp-action="Create" asp-route-lessonId="@Model.Id">@SharedLocalizer["Add Task"]</a>
+                </li>
+                <li class="list-group-item a-holder">
+                    <a asp-area="@administrationArea" asp-controller="Problem"
+                       asp-action="All" asp-route-lessonId="@Model.Id" asp-route-practiceId="@Model.PracticeId">@SharedLocalizer["All Tasks"]</a>
+                </li>
+            }
+        </ul>
+
+        @if (Model.Problems.Count > 0)
+        {
+            <h3 class="mt-3 text-secondary" id="problemName">01. @firstProblem.Name</h3>
+            @if (User.IsInRole(GlobalConstants.AdministratorRoleName))
+            {
+                <div class="mt-3" id="admin-buttons">
+                    <a class="btn btn-success" id="addTestsBtn" asp-area="@administrationArea"
+                       asp-controller="Problem" asp-action="AddTests" asp-route-problemId="@firstProblem.Id">@SharedLocalizer["Import tests"]</a>
+                    <a class="btn btn-primary test-btn" id="allTestsBtn" asp-area="@administrationArea"
+                       asp-controller="Test" asp-action="ProblemTests" asp-route-problemId="@firstProblem.Id">@SharedLocalizer["All Tests"]</a>
+                    <a class="btn btn-primary" id="addTestBtn" asp-area="@administrationArea"
+                       asp-controller="Problem" asp-action="AddTest" asp-route-problemId="@firstProblem.Id">@SharedLocalizer["Add Test"]</a>
+                    <a class="btn btn-warning problem-btn" id="editProblemBtn" asp-area="@administrationArea"
+                       asp-controller="Problem" asp-action="Edit" asp-route-id="@firstProblem.Id">@SharedLocalizer["Edit"]</a>
+                    <a class="btn btn-danger problem-btn" id="deleteProblemBtn" asp-area="@administrationArea"
+                       asp-controller="Problem" asp-action="Delete" asp-route-id="@firstProblem.Id">@SharedLocalizer["Delete"]</a>
+                </div>
+            }
+        }
+    </div>
+    <div>
+
+    </div>
+
+    @if (Model.Problems.Count > 0)
+    {
+        string fileFormDisplay = firstProblem.SubmissionType == SubmissionType.PlainCode ? "none" : "block";
+
+        <form id="zip-file" class="col-md-6" style="display:@fileFormDisplay">
+            <div class="file-upload-wrapper my-4" data-text="Select your files!">
+                <input name="file-upload-field" type="file" class="file-upload-field w-100" value="">
+            </div>
+        </form>
+
+        <div class="code-wrapper">
+            <textarea class="d-none" name="code" id="code-holder"></textarea>
+        </div>
+
+        <div class="mt-3">
+            <p class="my-1">
+                <span class="font-weight-bold">@SharedLocalizer["Allowed working time"]: </span>
+                <span class="font-italic allowed-time">@firstProblem.AllowedTimeInMilliseconds</span>
+                <span class="font-italic">ms</span>
+            </p>
+            <p class="my-1">
+                <span class="font-weight-bold">@SharedLocalizer["Allowed memory"]: </span>
+                <span class="font-italic allowed-memory">@firstProblem.AllowedMemoryInMegaBytes</span>
+                <span class="font-italic">MB</span>
+            </p>
+        </div>
+
+
+        <div class="d-flex justify-content-start">
+            <div class="button-holder mr-3 mt-4">
+                @if (Model.ContestId.HasValue)
+                {
+                    <button class="btn btn-success" data-contestId="@Model.ContestId" id="submit-btn">@SharedLocalizer["Submit"]</button>
+                }
+                else
+                {
+                    <button class="btn btn-secondary" id="submit-btn" data-practiceId="@Model.PracticeId">@SharedLocalizer["Submit"]</button>
+                }
+            </div>
+            <div class="w-25 form-group mt-4" id="programmingLanguage">
+                <select class="form-control" asp-items="programmingLangueages"></select>
+            </div>
+        </div>
+
+        <div id="submissions-holder" class="text-center border mt-3">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">@Localizer["Points"]</th>
+                        <th scope="col">@Localizer["Time and memory used"]</th>
+                        <th scope="col">@Localizer["Submission Date"]</th>
+                        <th scope="col">@Localizer["More info"]</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="ml-3">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" id="previous" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item page-number"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item">
+                        <a class="page-link" id="next" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    }
+    else
+    {
+        <hr />
+        <p class="text-info font-size-20 text-center">@Localizer["Currently there are no tasks for this lesson!"]</p>
+        <hr />
+
+    }
+
+</div>
+
+
+@section Scripts{
+    <script src="~/lib/codemirror/codemirror.js"></script>
+    <script src="~/lib/codemirror/mode/clike/clike.min.js"></script>
+    <script>
+        let codeTextarea = document.getElementById('code-holder');
+        var editor = CodeMirror.fromTextArea(codeTextarea,
+            {
+                lineNumbers: true,
+                matchBrackets: true,
+                mode: "text/x-c++src"
+            });
+    </script>
+    <script src="~/js/notification.js"></script>
+    <script src="~/js/controllers/submissionController.js"></script>
+    <script src="~/js/countdown.js"></script>
+
+    @if (Model.ContestId.HasValue)
+    {
+        <script>
+            initializeClock();
+        </script>
+    }
+
+    <script src="~/js/fileUploader.js"></script>
+}

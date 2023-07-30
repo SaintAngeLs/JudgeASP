@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20190616132147_SubmissionExecuedTestRelation.cs" />
+    <Compile Remove="Migrations\20190616132147_SubmissionExecuedTestRelation.Designer.cs" />
+    <Compile Remove="Migrations\20190616132913_SubmissionExecuedTestRelation.cs" />
+    <Compile Remove="Migrations\20190616132913_SubmissionExecuedTestRelation.Designer.cs" />
+    <Compile Remove="Migrations\20190616134242_SubmissionExecuedTestRelation.cs" />
+    <Compile Remove="Migrations\20190616134242_SubmissionExecuedTestRelation.Designer.cs" />
+    <Compile Remove="Migrations\20190622151223_AddNameAndSurnameToSuer.cs" />
+    <Compile Remove="Migrations\20190622151223_AddNameAndSurnameToSuer.Designer.cs" />
+    <Compile Remove="Migrations\20190802202727_AddAllowedTimeAndAlowedMemoryColumnsToProblem.cs" />
+    <Compile Remove="Migrations\20190802202727_AddAllowedTimeAndAlowedMemoryColumnsToProblem.Designer.cs" />
+    <Compile Remove="Migrations\20191004141819_FeedbackSenderRequired.cs" />
+    <Compile Remove="Migrations\20191004141819_FeedbackSenderRequired.Designer.cs" />
+    <Compile Remove="Migrations\20200304204204_AllowedIpAddressEntity.cs" />
+    <Compile Remove="Migrations\20200304204204_AllowedIpAddressEntity.Designer.cs" />
+    <Compile Remove="Migrations\20200304204459_AllowedIpAddressEntity.cs" />
+    <Compile Remove="Migrations\20200304204459_AllowedIpAddressEntity.Designer.cs" />
+    <Compile Remove="Migrations\20210922080156_UserTableNamesValidationAndAddedColumn.cs" />
+    <Compile Remove="Migrations\20210922080156_UserTableNamesValidationAndAddedColumn.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.S3" Version="3.7.201.4" />
+    <PackageReference Include="AWSSDK.SimpleEmail" Version="3.7.200.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="2.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\JudgeSystem.Common\JudgeSystem.Common.csproj" />
+    <ProjectReference Include="..\JudgeSystem.Data.Common\JudgeSystem.Data.Common.csproj" />
+    <ProjectReference Include="..\JudgeSystem.Data.Models\JudgeSystem.Data.Models.csproj" />
+  </ItemGroup>
+</Project>

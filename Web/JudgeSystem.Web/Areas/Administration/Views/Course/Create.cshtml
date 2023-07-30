@@ -1,0 +1,30 @@
+﻿@inject IStringLocalizer<SharedResources> SharedLocalizer
+@model CourseInputModel
+
+@{
+    ViewData["Title"] = SharedLocalizer["Course Create"];
+}
+
+<h1>@ViewData["Title"]</h1>
+<div class="row">
+    <div class="col-md-4">
+        <section>
+            <form id="account" method="post">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="OrderBy"></label>
+                    <input asp-for="OrderBy" class="form-control" />
+                    <span asp-validation-for="OrderBy" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">@SharedLocalizer["Create"]</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>

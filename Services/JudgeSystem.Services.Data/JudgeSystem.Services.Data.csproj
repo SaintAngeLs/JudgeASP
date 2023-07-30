@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.S3" Version="3.7.201.4" />
+    <PackageReference Include="AWSSDK.SimpleEmail" Version="3.7.200.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.9" />
+    <PackageReference Include="Microsoft.Extensions.ML" Version="0.14.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\JudgeSystem.Data.Common\JudgeSystem.Data.Common.csproj" />
+    <ProjectReference Include="..\..\Data\JudgeSystem.Data.Models\JudgeSystem.Data.Models.csproj" />
+    <ProjectReference Include="..\..\JudgeSystem.Common\JudgeSystem.Common.csproj" />
+    <ProjectReference Include="..\..\Web\JudgeSystem.Web.Dtos\JudgeSystem.Web.Dtos.csproj" />
+    <ProjectReference Include="..\..\Web\JudgeSystem.Web.Infrastructure\JudgeSystem.Web.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Web\JudgeSystem.Web.InputModels\JudgeSystem.Web.InputModels.csproj" />
+    <ProjectReference Include="..\..\Web\JudgeSystem.Web.ViewModels\JudgeSystem.Web.ViewModels.csproj" />
+    <ProjectReference Include="..\..\Workers\JudgeSystem.Compilers\JudgeSystem.Compilers.csproj" />
+    <ProjectReference Include="..\..\Workers\JudgeSystem.Executors\JudgeSystem.Executors.csproj" />
+    <ProjectReference Include="..\..\Workers\JudgeSystem.Workers.Common\JudgeSystem.Workers.Common.csproj" />
+    <ProjectReference Include="..\JudgeSystem.Services.Mapping\JudgeSystem.Services.Mapping.csproj" />
+    <ProjectReference Include="..\JudgeSystem.Services.Models\JudgeSystem.Services.Models.csproj" />
+    <ProjectReference Include="..\JudgeSystem.Services\JudgeSystem.Services.csproj" />
+  </ItemGroup>
+</Project>

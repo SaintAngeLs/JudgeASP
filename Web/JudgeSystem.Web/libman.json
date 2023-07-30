@@ -1,0 +1,102 @@
+{
+  "version": "1.0",
+  "defaultProvider": "unpkg",
+  "libraries": [
+    {
+      "library": "jquery@3.3.1",
+      "destination": "wwwroot/lib/jquery/",
+      "files": [
+        "dist/jquery.min.js",
+        "dist/jquery.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "popper.js@2.11.8",
+      "destination": "wwwroot/lib/popper.js/",
+      "files": [
+        "umd/popper.min.js",
+        "umd/popper.min.js.map"
+      ]
+    },
+    {
+      "library": "bootstrap@4.3.1",
+      "destination": "wwwroot/lib/bootstrap/",
+      "files": [
+        "dist/css/bootstrap.css",
+        "dist/css/bootstrap.min.css",
+        "dist/css/bootstrap.css.map",
+        "dist/js/bootstrap.js",
+        "dist/js/bootstrap.min.js",
+        "dist/js/bootstrap.min.js.map"
+
+      ]
+    },
+    {
+      "library": "jquery-validation@1.19.0",
+      "destination": "wwwroot/lib/jquery-validation/",
+      "files": [
+        "dist/jquery.validate.js",
+        "dist/jquery.validate.min.js"
+      ]
+    },
+    {
+      "library": "jquery-validation-unobtrusive@3.2.12",
+      "destination": "wwwroot/lib/jquery-validation-unobtrusive/",
+      "files": [
+        "dist/jquery.validate.unobtrusive.js",
+        "dist/jquery.validate.unobtrusive.min.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "font-awesome@6.4.0",
+      "destination": "wwwroot/lib/font-awesome/",
+      "files": [
+        "css/all.min.css",
+        "css/all.css",
+        "sprites/brands.svg",
+        "sprites/regular.svg",
+        "sprites/solid.svg",
+        //"webfonts/fa-brands-400.eot",
+        //"webfonts/fa-brands-400.svg",
+        "webfonts/fa-brands-400.ttf",
+        //"webfonts/fa-brands-400.woff",
+        "webfonts/fa-brands-400.woff2",
+        //"webfonts/fa-regular-400.eot",
+        //"webfonts/fa-regular-400.svg",
+        "webfonts/fa-regular-400.ttf",
+        //"webfonts/fa-regular-400.woff",
+        "webfonts/fa-regular-400.woff2",
+        //"webfonts/fa-solid-900.eot",
+        //"webfonts/fa-solid-900.svg",
+        "webfonts/fa-solid-900.ttf",
+        //"webfonts/fa-solid-900.woff",
+        "webfonts/fa-solid-900.woff2"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "codemirror@6.65.7",
+      "destination": "wwwroot/lib/codemirror/",
+      "files": [
+        "mode/tiki/tiki.min.css",
+        "codemirror.css",
+        "codemirror.js",
+        "codemirror.min.js"
+      ]
+    },
+
+    {
+      "provider": "cdnjs",
+      "library": "jquery-datetimepicker@2.5.20",
+      "destination": "wwwroot/lib/jquery-datetimepicker/",
+      "files": [
+        "jquery.datetimepicker.min.js",
+        "jquery.datetimepicker.css",
+        "jquery.datetimepicker.full.min.js",
+        "jquery.datetimepicker.min.css"
+      ]
+    }
+  ]
+}

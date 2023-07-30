@@ -1,0 +1,78 @@
+﻿@inject IStringLocalizer<SharedResources> SharedLocalizer
+@inject IViewLocalizer Localizer
+@model UserResultsViewModel
+
+@{
+    ViewData["Title"] = SharedLocalizer["Results"];
+}
+
+<h3 class="text-center mb-4">
+    <span class="text-info">
+        <vc:user-names user-id="@Model.UserId"></vc:user-names>
+    </span> @Localizer["contest and practice results."]
+</h3>
+<nav class="mb-3">
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-contest-results-tab" data-toggle="tab" href="#nav-contest-results" role="tab" aria-controls="nav-contest-results" aria-selected="true">@SharedLocalizer["Contest results"]</a>
+        <a class="nav-item nav-link" id="nav-practice-results-tab" data-toggle="tab" href="#nav-practice-results" role="tab" aria-controls="nav-practice-results" aria-selected="false">@SharedLocalizer["Practice results"]</a>
+    </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-contest-results" role="tabpanel" aria-labelledby="nav-contest-results-tab">
+        <table class="table table-striped">
+            <thead>
+                <tr class="row">
+                    <th class="col-sm-9">@SharedLocalizer["Contest"]</th>
+                    <th class="col-sm-3">@SharedLocalizer["Results"]</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var contestResult in Model.ContestResults)
+                {
+                    <tr class="row">
+                        <td class="col-sm-9">
+                            <a class="text-decoration-none"
+                               asp-action="Submissions"
+                               asp-area="@GlobalConstants.AdministrationArea"
+                               asp-controller="Contest"
+                               asp-route-contestId="@contestResult.ContestId"
+                               asp-route-userId="@Model.UserId">
+                                @contestResult.ContestName
+                            </a>
+                        </td>
+                        <td class="col-sm-3">@contestResult.ActualPoints / @contestResult.MaxPoints</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="tab-pane fade" id="nav-practice-results" role="tabpanel" aria-labelledby="nav-practice-results-tab">
+        <table class="table table-striped">
+            <thead>
+                <tr class="row">
+                    <th class="col-sm-9">@SharedLocalizer["Lesson name"]</th>
+                    <th class="col-sm-3">@SharedLocalizer["Results"]</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var practiceResult in Model.PracticeResults)
+                {
+                    <tr class="row">
+                        <td class="col-sm-9">
+                            <a class="text-decoration-none"
+                               asp-controller="Practice"
+                               asp-area="@GlobalConstants.AdministrationArea"
+                               asp-action="Submissions"
+                               asp-route-userId="@Model.UserId"
+                               asp-route-practiceId="@practiceResult.PracticeId">
+                                @practiceResult.LessonName
+                            </a>
+                        </td>
+                        <td class="col-sm-3">@practiceResult.ActualPoints / @practiceResult.MaxPoints</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

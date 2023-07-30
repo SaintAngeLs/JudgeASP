@@ -1,0 +1,168 @@
+﻿@inject JavaScriptSnippet JavaScriptSnippet
+@inject IViewLocalizer Localizer
+
+@{
+    string error = string.Empty;
+    string info = string.Empty;
+
+    if (this.TempData[GlobalConstants.ErrorKey] != null)
+    {
+        error = this.TempData[GlobalConstants.ErrorKey].ToString();
+    }
+
+    if (this.TempData[GlobalConstants.InfoKey] != null)
+    {
+        info = this.TempData[GlobalConstants.InfoKey].ToString();
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@this.ViewData["Title"] - Judge System</title>
+
+    <link rel='shortcut icon' type='image/x-icon' href='~/justice.ico' />
+    <environment names="Development">
+        <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/lib/jquery-datetimepicker/jquery.datetimepicker.min.css" rel="stylesheet" type="text/css" asp-append-version="true" />
+        <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/lib/codemirror/codemirror.css" rel="stylesheet" asp-append-version="true" />
+    </environment>
+    <environment names="Staging,Production">
+        <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/css/site.min.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/lib/codemirror/codemirror.css" rel="stylesheet" asp-append-version="true" />
+        <link href="~/lib/jquery-datetimepicker/jquery.datetimepicker.css" rel="stylesheet" asp-append-version="true" />
+    </environment>
+    @Html.Raw(JavaScriptSnippet.FullScript)
+</head>
+<body>
+    <header class="mb-3">
+        <nav class="navbar navbar-expand-lg navbar-toggleable-lg navbar-dark border-bottom box-shadow">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Judge System</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-lg-inline-flex flex-lg-row-reverse">
+                    <partial name="_LoginPartial" />
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @Localizer["Courses"]
+                            </a>
+                            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                <vc:course-links class-name="dropdown-item"></vc:course-links>
+                            </ul>
+                        </li>
+
+                        @if (User.IsInRole(GlobalConstants.AdministratorRoleName))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    @Localizer["Administration"]
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" asp-area="@GlobalConstants.AdministrationArea" asp-controller="Course" asp-action="Create">@Localizer["Add course"]</a>
+                                    <a class="dropdown-item" asp-area="@GlobalConstants.AdministrationArea" asp-action="Create" asp-controller="Contest">@Localizer["Add contest"]</a>
+                                    <a class="dropdown-item" asp-area="@GlobalConstants.AdministrationArea" asp-action="Create" asp-controller="Student">@Localizer["Add student"]</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" asp-area="@GlobalConstants.AdministrationArea" asp-controller="Contest" asp-action="ActiveContests">@Localizer["Active contests"]</a>
+                                    <a class="dropdown-item" asp-area="@GlobalConstants.AdministrationArea" asp-controller="Contest" asp-action="All">@Localizer["All contests"]</a>
+                                    <a class="dropdown-item" asp-area="@GlobalConstants.AdministrationArea" asp-controller="Student" asp-action="StudentsByClass" asp-route-classType="@SchoolClassType.A">@Localizer["Students"]</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" asp-area="@GlobalConstants.AdministrationArea" asp-controller="User" asp-action="All">@Localizer["All users"]</a>
+                                    <a class="dropdown-item" asp-area="@GlobalConstants.AdministrationArea" asp-controller="AllowedIpAddress" asp-action="All">@Localizer["All ip addresses"]</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="@GlobalConstants.AdministrationArea" asp-controller="Feedback" asp-action="All">@Localizer["Feedbacks"]</a>
+                            </li>
+                        }
+                        else if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-controller="Feedback" asp-action="Send">@Localizer["Feedback"]</a>
+                            </li>
+                        }
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-controller="Home" asp-action="Documentation">@Localizer["Documentation"]</a>
+                        </li>
+                        <li class="nav-item">
+                            <form method="get" class="form-inline ml-lg-3 my-lg-0" asp-area="" asp-controller="Search" asp-action="Results">
+                                <input class="form-control mr-sm-2" type="search" name="keyword" id="keyword" placeholder="@Localizer["Search"]" aria-label="Search">
+                                <button class="btn btn-secondary text-white te my-2 my-sm-0" type="submit">@Localizer["Search"]</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="messages">
+        <div id="infoBox" class="notification">
+            <div>
+                <i class="fas fa-check text-white font-size-30 mx-4"></i>
+                <span>@info</span>
+                <i class="fas fa-times text-white font-size-20 ml-4"></i>
+            </div>
+        </div>
+        <div id="errorBox" class="notification">
+            <div>
+                <i class="fas fa-exclamation-triangle text-white font-size-30 mx-4"></i>
+                <span>@error</span>
+                <i class="fas fa-times text-white font-size-20 ml-4"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <partial name="_CookieConsentPartial" />
+        <main role="main" class="pb-3">
+            @this.RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container text-center">
+            @DateTime.Now.Year - JudgeSystem. <a href="https://github.com/NaskoVasilev/JudgeSystem">@Localizer["Open source project"]</a>
+        </div>
+    </footer>
+
+    <environment names="Development">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" asp-append-version="true"></script>
+       <script src="//netdna.bootstrapcdn.com/bootstrap/4.7.0/js/bootstrap.min.js" asp-append-version="true"></script>
+        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/4.7.0/css/bootstrap.min.css" asp-append-version="true">
+        <script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
+        <script src="~/lib/jquery/dist/jquery.js" asp-append-version="true"></script>
+        <script src="~/lib/popper.js/umd/popper.min.js" asp-append-version="true"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.js" asp-append-version="true"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js" asp-append-version="true"></script>
+        <script src="~/lib/jquery-datetimepicker/jquery.datetimepicker.full.min.js" asp-append-version="true"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js" asp-append-version="true"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment names="Staging,Production">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" asp-append-version="true"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/4.7.0/js/bootstrap.min.js" asp-append-version="true"></script>
+        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/4.7.0/css/bootstrap.min.css" asp-append-version="true">
+        <script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
+        <script src="~/lib/popper.js/umd/popper.min.js" asp-append-version="true"></script>
+        <script src="~/lib/jquery-validation/dist/jquery.validate.min.js" asp-append-version="true"></script>
+        <script src="~/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js" asp-append-version="true"></script>
+        <script src="~/lib/jquery-datetimepicker/jquery.datetimepicker.full.min.js" asp-append-version="true"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.min.js" asp-append-version="true"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+
+    </environment>
+
+    @this.RenderSection("Scripts", required: false)
+</body>
+</html>

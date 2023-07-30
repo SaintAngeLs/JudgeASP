@@ -1,0 +1,13 @@
+﻿@model LessonProblemsViewComponentModel
+
+<div>
+    <ul class="list-group d-flex flex-md-row">
+        @foreach (var problem in Model.Problems)
+        {
+            string url = string.Format(Model.UrlPlaceholder, problem.Id);
+            <li class="list-group-item">
+                <a class="text-secondary" href="@url">@problem.Name</a>
+            </li>
+        }
+    </ul>
+</div>

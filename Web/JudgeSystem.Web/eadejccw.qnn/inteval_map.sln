@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inteval_map", "inteval_map\inteval_map.csproj", "{BF1C0C24-5E30-4727-964A-9CBEB413CED4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{A7FBC22A-06BB-4B0A-B1BA-2F1B061DBBE1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BF1C0C24-5E30-4727-964A-9CBEB413CED4} = {BF1C0C24-5E30-4727-964A-9CBEB413CED4}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF1C0C24-5E30-4727-964A-9CBEB413CED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF1C0C24-5E30-4727-964A-9CBEB413CED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF1C0C24-5E30-4727-964A-9CBEB413CED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF1C0C24-5E30-4727-964A-9CBEB413CED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7FBC22A-06BB-4B0A-B1BA-2F1B061DBBE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7FBC22A-06BB-4B0A-B1BA-2F1B061DBBE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7FBC22A-06BB-4B0A-B1BA-2F1B061DBBE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7FBC22A-06BB-4B0A-B1BA-2F1B061DBBE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A760B75-1DA3-479A-B67F-7E41D48C908E}
+	EndGlobalSection
+EndGlobal

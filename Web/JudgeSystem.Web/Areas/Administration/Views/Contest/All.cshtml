@@ -1,0 +1,70 @@
+﻿@inject IViewLocalizer Localizer
+@inject IStringLocalizer<SharedResources> SharedLocalizer
+@model ContestAllViewModel
+
+@{
+    ViewData["Title"] = Localizer["All contests"];
+    string url = $"/{GlobalConstants.AdministrationArea}/Contest/All?{GlobalConstants.PageKey}=" + "{0}";
+    PaginationData paginationData = new PaginationData() { Url = url, NumberOfPages = Model.NumberOfPages, CurrentPage = Model.CurrentPage };
+}
+
+<h2 class="text-center mb-4">@ViewData["Title"]</h2>
+
+<table class="table table-hover">
+    <thead>
+        <tr class="row">
+            <th class="col-md-5">@SharedLocalizer["Name"]</th>
+            <th class="col-md-5">@Localizer["Duration"]</th>
+            <th class="col-md-2">@SharedLocalizer["Settings"]</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var contest in Model.Contests)
+        {
+            <tr class="row">
+                <td class="col-md-5">
+                    <a class="text-decoration-none text-secondary"
+                       asp-controller="Contest" asp-action="Results" asp-route-id="@contest.Id">@contest.Name</a>
+                </td>
+                <td class="col-md-5">
+                    @SharedLocalizer["From"] @contest.FormatedStartTime @SharedLocalizer["to"] @contest.FormatedEndTime
+                </td>
+                  <td class="col-md-2">
+                    <div class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            <i class="fas fa-cog"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" 
+                               asp-area="@GlobalConstants.AdministrationArea"
+                               asp-controller="Contest"
+                               asp-action="AllowedIpAddresses"
+                               asp-route-id="@contest.Id"
+                               asp-route-name="@contest.Name">@Localizer["Allowed ip addresses"]</a>
+                            <a class="dropdown-item"
+                               asp-area="@GlobalConstants.AdministrationArea"
+                               asp-controller="Contest"
+                               asp-action="AddAllowedIpAddress"
+                               asp-route-id="@contest.Id"
+                               asp-route-name="@contest.Name">@Localizer["Add allowed ip address"]</a>
+                       </div>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<partial name="_ServerSidePaginationPartial" model="paginationData" />
+
+@section Scripts{
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
+integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>   
+    <script src="~/js/pagination.js"></script>
+    <script>
+			let url = "@url";
+			let numberOfPagesUrl = "/Contest/GetNumberOfPages";
+			InitializePaginationList(url, numberOfPagesUrl)
+    </script>
+}
