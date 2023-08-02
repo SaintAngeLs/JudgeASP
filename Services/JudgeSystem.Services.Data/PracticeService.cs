@@ -58,13 +58,25 @@ namespace JudgeSystem.Services.Data
 
         public PracticeAllResultsViewModel GetPracticeResults(int id, int page, int entitesPerPage)
         {
-            PracticeAllResultsViewModel model = repository.All()
-                .Where(practice => practice.Id == id)
-                .Select(practice => new PracticeAllResultsViewModel()
-                {
-                    Id = practice.Id,
-                    LessonName = practice.Lesson.Name,
-                    Problems = practice.Lesson.Problems
+            var practice = repository.All()
+    .Include(p => p.Lesson)
+        .ThenInclude(l => l.Problems)
+    .Include(p => p.UserPractices)
+        .ThenInclude(up => up.User)
+            .ThenInclude(u => u.Submissions)
+    .Where(practice => practice.Id == id)
+    .FirstOrDefault();
+
+            if (practice == null)
+            {
+                Validator.ThrowEntityNotFoundExceptionIfEntityIsNull(practice, nameof(Contest));
+            }
+
+            var practiceAllResultsViewModel = new PracticeAllResultsViewModel()
+            {
+                Id = practice.Id,
+                LessonName = practice.Lesson.Name,
+                Problems = practice.Lesson.Problems
                     .OrderBy(problem => problem.CreatedOn)
                     .Select(problem => new PracticeProblemViewModel
                     {
@@ -73,30 +85,34 @@ namespace JudgeSystem.Services.Data
                         IsExtraTask = problem.IsExtraTask,
                         MaxPoints = problem.MaxPoints
                     })
-                    .ToList(),
-                    PracticeResults = practice.UserPractices
-                    .Select(userPractice => new PracticeResultViewModel
-                    {
-                        UserId = userPractice.User.Id,
-                        Username = userPractice.User.UserName,
-                        FullName = $"{userPractice.User.Name} {userPractice.User.Surname}",
-                        PointsByProblem = userPractice.User.Submissions
+                    .ToList()
+            };
+
+            practiceAllResultsViewModel.PracticeResults = practice.UserPractices
+                .Select(userPractice => new
+                {
+                    UserPractice = userPractice,
+                    Submissions = userPractice.User.Submissions
                         .Where(submission => submission.PracticeId == practice.Id)
                         .GroupBy(submission => submission.ProblemId)
-                        .ToDictionary(problemBySubmissions => 
-                            problemBySubmissions.Key, 
-                            submissions => submissions.Max(s => s.ActualPoints))
-                    })
-                    .OrderByDescending(cr => cr.Total)
-                    .ThenBy(cr => cr.Username)
-                    .GetPage(page, entitesPerPage)
-                    .ToList(),
+                        .ToList()
                 })
-                .FirstOrDefault();
+                .ToList()
+                .Select(up => new PracticeResultViewModel
+                {
+                    UserId = up.UserPractice.User.Id,
+                    Username = up.UserPractice.User.UserName,
+                    FullName = $"{up.UserPractice.User.Name} {up.UserPractice.User.Surname}",
+                    PointsByProblem = up.Submissions.ToDictionary(
+                        problemBySubmissions => problemBySubmissions.Key,
+                        submissions => submissions.Max(s => s.ActualPoints))
+                })
+                .OrderByDescending(cr => cr.Total)
+                .ThenBy(cr => cr.Username)
+                .GetPage(page, entitesPerPage)
+                .ToList();
 
-            Validator.ThrowEntityNotFoundExceptionIfEntityIsNull(model, nameof(Contest));
-
-            return model;
+            return practiceAllResultsViewModel;
         }
 
         public int GetPracticeResultsPagesCount(int id, int entitesPerPage)

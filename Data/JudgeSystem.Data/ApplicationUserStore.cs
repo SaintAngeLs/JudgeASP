@@ -8,15 +8,15 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 namespace JudgeSystem.Data
 {
     public class ApplicationUserStore : UserStore<
-        ApplicationUser,
-        ApplicationRole,
-        ApplicationDbContext,
-        string,
-        IdentityUserClaim<string>,
-        IdentityUserRole<string>,
-        IdentityUserLogin<string>,
-        IdentityUserToken<string>,
-        IdentityRoleClaim<string>>
+                                                    ApplicationUser,
+                                                    ApplicationRole,
+                                                    ApplicationDbContext,
+                                                    string,
+                                                    IdentityUserClaim<string>,
+                                                    IdentityUserRole<string>,
+                                                    IdentityUserLogin<string>,
+                                                    IdentityUserToken<string>,
+                                                    IdentityRoleClaim<string>>
     {
         public ApplicationUserStore(ApplicationDbContext context, IdentityErrorDescriber describer = null)
             : base(context, describer)

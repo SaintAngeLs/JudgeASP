@@ -6,10 +6,22 @@
   <ItemGroup>
     <PackageReference Include="AWSSDK.S3" Version="3.7.201.4" />
     <PackageReference Include="AWSSDK.SimpleEmail" Version="3.7.200.5" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
     <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.9" />
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="5.3.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.32.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.0.1" />
     <PackageReference Include="Moq" Version="4.12.0" />
+    <PackageReference Include="MyTested.AspNetCore.Mvc" Version="6.0.0" />
+    <PackageReference Include="MyTested.AspNetCore.Mvc.Abstractions" Version="6.0.0" />
+    <PackageReference Include="MyTested.AspNetCore.Mvc.Configuration" Version="6.0.0" />
+    <PackageReference Include="MyTested.AspNetCore.Mvc.Controllers" Version="6.0.0" />
+    <PackageReference Include="MyTested.AspNetCore.Mvc.Helpers" Version="6.0.0" />
+    <PackageReference Include="MyTested.AspNetCore.Mvc.Models" Version="6.0.0" />
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
   </ItemGroup>

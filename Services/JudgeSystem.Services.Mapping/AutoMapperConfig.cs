@@ -10,6 +10,8 @@ namespace JudgeSystem.Services.Mapping
 {
     public static class AutoMapperConfig
     {
+
+        private static readonly object lockObject = new object();
         private static bool initialized;
 
         public static void RegisterMappings(params Assembly[] assemblies)
@@ -18,34 +20,40 @@ namespace JudgeSystem.Services.Mapping
             {
                 return;
             }
-
-            initialized = true;
-
-            var types = assemblies.SelectMany(a => a.GetExportedTypes()).ToList();
-
-            var config = new MapperConfigurationExpression();
-            config.CreateProfile("ReflectionProfile", configuration =>
+            lock (lockObject)
             {
-                // IMapFrom<>
-                foreach (TypesMap map in GetFromMaps(types))
+                if (initialized)
                 {
-                    configuration.CreateMap(map.Source, map.Destination);
+                    return;
                 }
+                initialized = true;
 
-                // IMapTo<>
-                foreach (TypesMap map in GetToMaps(types))
+                var types = assemblies.SelectMany(a => a.GetExportedTypes()).ToList();
+
+                var config = new MapperConfigurationExpression();
+                config.CreateProfile("ReflectionProfile", configuration =>
                 {
-                    configuration.CreateMap(map.Source, map.Destination);
-                }
+                    // IMapFrom<>
+                    foreach (TypesMap map in GetFromMaps(types))
+                    {
+                        configuration.CreateMap(map.Source, map.Destination);
+                    }
 
-                // IHaveCustomMappings
-                foreach (IHaveCustomMappings map in GetCustomMappings(types))
-                {
-                    map.CreateMappings(configuration);
-                }
-            });
+                    // IMapTo<>
+                    foreach (TypesMap map in GetToMaps(types))
+                    {
+                        configuration.CreateMap(map.Source, map.Destination);
+                    }
 
-            Mapper.Initialize(config);
+                    // IHaveCustomMappings
+                    foreach (IHaveCustomMappings map in GetCustomMappings(types))
+                    {
+                        map.CreateMappings(configuration);
+                    }
+                });
+
+                Mapper.Initialize(config);
+            }
         }
 
         private static IEnumerable<TypesMap> GetFromMaps(IEnumerable<Type> types)

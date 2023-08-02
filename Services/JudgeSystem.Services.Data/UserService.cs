@@ -35,22 +35,19 @@ namespace JudgeSystem.Services.Data
 
 		public List<UserCompeteResultViewModel> GetContestResults(string userId)
 		{
-            var userContests = repository.All()
-            .Where(u => u.Id == userId)
-            .SelectMany(u => u.UserContests)
-            .Where(uc => uc.Contest.Lesson.Problems.Count > 0)
-            .ToList(); // Added ToList() to load data into memory
-
-            var result = userContests
+            var result = repository.All()
+                .Where(u => u.Id == userId)
+                .SelectMany(u => u.UserContests)
+                .Where(uc => uc.Contest.Lesson.Problems.Count > 0)
                 .Select(uc => new UserCompeteResultViewModel()
                 {
                     ActualPoints = uc.Contest.Submissions
-                        .Where(s => s.UserId == userId && !s.Problem.IsExtraTask)
-                        .GroupBy(s => s.ProblemId)
-                        .Sum(x => x.Max(s => s.ActualPoints)),
+                    .Where(s => s.UserId == userId && !s.Problem.IsExtraTask)
+                    .GroupBy(s => s.ProblemId)
+                    .Sum(x => x.Max(s => s.ActualPoints)),
                     MaxPoints = uc.Contest.Lesson.Problems
-                        .Where(p => !p.IsExtraTask)
-                        .Sum(p => p.MaxPoints),
+                    .Where(p => !p.IsExtraTask)
+                    .Sum(p => p.MaxPoints),
                     ContestName = uc.Contest.Name,
                     LessonId = uc.Contest.LessonId,
                     ContestId = uc.Contest.Id
@@ -58,69 +55,60 @@ namespace JudgeSystem.Services.Data
                 .ToList();
 
             return result;
+
+
+
         }
 
 		public List<UserPracticeResultViewModel> GetPracticeResults(string userId)
 		{
-            var userPractices = repository.All()
-                   .Where(u => u.Id == userId)
-                   .SelectMany(u => u.UserPractices)
-                   .Where(uc => uc.Practice.Lesson.Problems.Count > 0)
-                   .ToList(); // Load data into memory
-
-            var result = userPractices
-                .Select(up =>
-                {
-                    if (up.Practice == null || up.Practice.Lesson == null)
-                    {
-                        return null;
-                    }
-                    var actualPoints = up.Practice.Submissions?
-                            .Where(s => s.UserId == userId && s.Problem != null && !s.Problem.IsExtraTask)
-                            .ToList() // Load data into memory
-                            .GroupBy(s => s.ProblemId)
-                            .Sum(x => x.Max(s => s.ActualPoints)) ?? 0;
-
-                    var maxPoints = up.Practice.Lesson.Problems?
-                            .Where(p => !p.IsExtraTask)
-                            .Sum(p => p.MaxPoints) ?? 0;
-
-                    return new UserPracticeResultViewModel()
-                    {
-                        ActualPoints = actualPoints,
-                        MaxPoints = maxPoints,
-                        LessonName = up.Practice.Lesson.Name,
-                        PracticeId = up.Practice.Id,
-                        LessonId = up.Practice.LessonId
-                    };
-                })
-                .Where(model => model != null)
-                .ToList();
+            var result = repository.All()
+                 .Where(u => u.Id == userId)
+                 .SelectMany(u => u.UserPractices)
+                 .Where(uc => uc.Practice.Lesson.Problems.Count > 0)
+                 .Select(up => new UserPracticeResultViewModel()
+                 {
+                     ActualPoints = up.Practice.Submissions
+                     .Where(s => s.UserId == userId && !s.Problem.IsExtraTask)
+                     .GroupBy(s => s.ProblemId)
+                     .Sum(x => x.Max(s => s.ActualPoints)),
+                     MaxPoints = up.Practice.Lesson.Problems
+                     .Where(p => !p.IsExtraTask)
+                     .Sum(p => p.MaxPoints),
+                     LessonName = up.Practice.Lesson.Name,
+                     PracticeId = up.Practice.Id,
+                     LessonId = up.Practice.LessonId
+                 })
+                 .ToList();
 
             return result;
         }
 
 		public IEnumerable<UserCompeteResultViewModel> GetUserExamResults(string userId)
 		{
-			var exams = repository.All()
-				.Where(u => u.Id == userId)
-				.SelectMany(u => u.UserContests)
-                .Where(uc => uc.Contest.Lesson.Problems.Count > 0)
-                .Select(uc => uc.Contest)
-				.Where(c => c.Lesson.Type == LessonType.Exam)
-				.Select(c => new UserCompeteResultViewModel
-				{
-                    ContestId = c.Id,
-					ContestName = c.Name,
-					LessonId = c.LessonId,
-					MaxPoints = c.Lesson.Problems.Where(p => !p.IsExtraTask).Sum(p => p.MaxPoints),
-					ActualPoints = c.Submissions.Where(x => x.UserId == userId && !x.Problem.IsExtraTask).GroupBy(s => s.ProblemId)
-					.Sum(submissionGroup => submissionGroup.Max(submission => submission.ActualPoints))
-				})
-				.ToList();
+            var exams = repository.All()
+               .Where(u => u.Id == userId)
+               .SelectMany(u => u.UserContests)
+               //.Include(uc => uc.Contest.Submissions) // Load related data into memory
+               .Where(uc => uc.Contest.Lesson.Problems.Count > 0)
+               .Select(uc => uc.Contest)
+               .Where(c => c.Lesson.Type == LessonType.Exam)
+               .ToList();  // Load data into memory
 
-			return exams;
-		}
+            var result = exams
+                .Select(c => new UserCompeteResultViewModel
+                {
+                    ContestId = c.Id,
+                    ContestName = c.Name,
+                    LessonId = c.LessonId,
+                    MaxPoints = c.Lesson.Problems.Where(p => !p.IsExtraTask).Sum(p => p.MaxPoints),
+                    ActualPoints = c.Submissions.Where(x => x.UserId == userId && !x.Problem.IsExtraTask).GroupBy(s => s.ProblemId)
+                    .Sum(submissionGroup => submissionGroup.Max(submission => submission.ActualPoints))
+                })
+                .ToList();
+
+            return result;
+        }
 
         public async Task DeleteUserData(string userId, string studentId)
         {

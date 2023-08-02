@@ -284,15 +284,15 @@ input[type=file] {
 
 /*Code holder*/
 .CodeMirror-scroll {
-    background-color: #6effa9;
+    background-color: #cadcfc;
 }
 
 .code-wrapper .CodeMirror-gutters {
-    background-color: #deeadb
+    background-color: #d8dfeb;
 }
 
 .CodeMirror-linenumber {
-    color: #481414
+    color: #1c6fff;
 }
 
 .active-problem {
