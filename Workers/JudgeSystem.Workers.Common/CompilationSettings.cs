@@ -8,15 +8,20 @@
 
         public const string ExeFileExtension = ".exe";
 
+        public const string PyFileExtension = ".py";
+
         public const string JavaOutputFileExtension = ".jar";
 
         public static string CppCompilerPath { get; set; }
+
+        public static string PythonCompilerPath { get; set; }
 
         public static string JavaCompilerPath { get; set; }
 
         public const string SetCompilerPathCommand = "set PATH=%PATH%;";
 
         public static string SetCPlusPlusCompilerPathCommand => GetCompilerPathCommand(CppCompilerPath);
+        public static string SetPythonInterpreterPathCommand => GetCompilerPathCommand(PythonCompilerPath);
 
         public static string SetJavaCompilerPathCommand => GetCompilerPathCommand(JavaCompilerPath);
 

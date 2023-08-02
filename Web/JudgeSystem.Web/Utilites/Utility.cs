@@ -58,6 +58,9 @@ namespace JudgeSystem.Web.Utilites
                     case ProgrammingLanguage.CPlusPlus:
                         item.Text = "C++ code";
                         break;
+                    case ProgrammingLanguage.Python:
+                        item.Text = "Python code";
+                        break;
                 }
 
                 yield return item;

@@ -19872,3 +19872,1994 @@ ORDER BY [c].[OrderBy]
 2023-08-02 16:24:37.625 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.3254ms
 2023-08-02 16:24:37.650 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
 2023-08-02 16:24:37.654 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.2023ms
+2023-08-02 16:37:00.253 +02:00 [WRN] Entity 'AllowedIpAddress' has a global query filter defined and is the required end of a relationship with the entity 'AllowedIpAddressContest'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 16:37:00.285 +02:00 [WRN] Entity 'Submission' has a global query filter defined and is the required end of a relationship with the entity 'ExecutedTest'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 16:37:00.285 +02:00 [WRN] Entity 'Lesson' has a global query filter defined and is the required end of a relationship with the entity 'Resource'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 16:37:00.285 +02:00 [WRN] Entity 'SchoolClass' has a global query filter defined and is the required end of a relationship with the entity 'Student'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 16:37:00.285 +02:00 [WRN] Entity 'Problem' has a global query filter defined and is the required end of a relationship with the entity 'Test'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 16:37:00.286 +02:00 [WRN] Entity 'Contest' has a global query filter defined and is the required end of a relationship with the entity 'UserContest'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 16:37:00.286 +02:00 [WRN] Entity 'Practice' has a global query filter defined and is the required end of a relationship with the entity 'UserPractice'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 16:37:00.902 +02:00 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-02 16:37:00.945 +02:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-08-02 16:37:00.949 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-02 16:37:00.949 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-08-02 16:37:00.966 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-08-02 16:37:00.987 +02:00 [INF] No migrations were applied. The database is already up to date.
+2023-08-02 16:37:01.483 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[IsDeleted], [a].[ModifiedOn], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedName] = @__normalizedName_0
+2023-08-02 16:37:01.577 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[IsDeleted], [a].[ModifiedOn], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedName] = @__normalizedName_0
+2023-08-02 16:37:01.578 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[IsDeleted], [a].[ModifiedOn], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedName] = @__normalizedName_0
+2023-08-02 16:37:01.579 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[IsDeleted], [a].[ModifiedOn], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedName] = @__normalizedName_0
+2023-08-02 16:37:01.614 +02:00 [INF] Seeder RolesSeeder done.
+2023-08-02 16:37:01.657 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.658 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.659 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.659 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.659 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.660 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.660 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.661 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.661 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.661 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.662 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.662 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.662 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.663 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.663 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.663 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.663 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.664 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.664 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.664 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.665 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.665 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.665 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.665 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.666 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:01.672 +02:00 [INF] Seeder SchoolClassesSeeder done.
+2023-08-02 16:37:01.690 +02:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 16:37:01.703 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[IsFromActiveDirectory], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedOn], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[StudentId], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-08-02 16:37:01.764 +02:00 [INF] Seeder AdminSeeder done.
+2023-08-02 16:37:02.484 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/ - -
+2023-08-02 16:37:02.738 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller JudgeSystem.Web.Controllers.HomeController (JudgeSystem.Web).
+2023-08-02 16:37:02.798 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.HomeController.Index (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 16:37:02.802 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.HomeController.Index (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5722ms.
+2023-08-02 16:37:02.811 +02:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 16:37:02.954 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[@__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[EndTime], [c].[Id], [c].[LessonId], [c].[Name]
+FROM [Contests] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit) AND [c].[StartTime] < @__now_0 AND [c].[EndTime] > @__now_0
+2023-08-02 16:37:03.073 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[EndTime], [c].[LessonId], [t0].[Id], [c].[Name]
+FROM [Contests] AS [c]
+INNER JOIN (
+    SELECT [l].[Id]
+    FROM [Lessons] AS [l]
+    WHERE [l].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [c].[LessonId] = [t].[Id]
+LEFT JOIN (
+    SELECT [p].[Id], [p].[LessonId]
+    FROM [Practices] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [t0] ON [t].[Id] = [t0].[LessonId]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit) AND [c].[EndTime] < GETDATE() AND [c].[EndTime] >= DATEADD(day, CAST(@__p_0 AS int), GETDATE())
+2023-08-02 16:37:03.381 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[PracticeId]
+FROM [UserPractices] AS [u]
+WHERE [u].[UserId] = @__userId_0
+2023-08-02 16:37:03.395 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[Name], [t].[Id] AS [PracticeId], [l].[Type]
+FROM [Lessons] AS [l]
+LEFT JOIN (
+    SELECT [p].[Id], [p].[LessonId]
+    FROM [Practices] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [l].[Id] = [t].[LessonId]
+WHERE [l].[IsDeleted] = CAST(0 AS bit) AND [l].[IsDeleted] = CAST(0 AS bit) AND ([t].[Id] <> 1 OR ([t].[Id] IS NULL))
+2023-08-02 16:37:03.478 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 16:37:03.604 +02:00 [INF] Executed ViewResult - view Index executed in 795.0268ms.
+2023-08-02 16:37:03.609 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.HomeController.Index (JudgeSystem.Web) in 870.3337ms
+2023-08-02 16:37:03.659 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 16:37:03.659 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/lib/codemirror/codemirror.css?v=60lOqXLSZh74b39qxlbdZ4bXIeScnBtG4euWfktvm_M - -
+2023-08-02 16:37:03.664 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 3.9847ms
+2023-08-02 16:37:03.664 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/ - - - 200 - text/html;+charset=utf-8 1187.9450ms
+2023-08-02 16:37:03.669 +02:00 [INF] The file /lib/codemirror/codemirror.css was not modified
+2023-08-02 16:37:03.669 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/lib/codemirror/codemirror.css?v=60lOqXLSZh74b39qxlbdZ4bXIeScnBtG4euWfktvm_M - - - 304 - text/css 9.8754ms
+2023-08-02 16:37:03.678 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 16:37:03.710 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 31.9777ms
+2023-08-02 16:37:05.053 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Lesson/Details/1?practiceId=1 - -
+2023-08-02 16:37:05.067 +02:00 [INF] Route matched with {action = "Details", controller = "Lesson", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32, System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.LessonController (JudgeSystem.Web).
+2023-08-02 16:37:05.097 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 16:37:05.161 +02:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2023-08-02 16:37:05.170 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[CourseId], [t0].[Id], [t0].[LessonPassword], [t0].[Name], [t0].[Id0], [t1].[AllowedMemoryInMegaBytes], [t1].[AllowedTimeInMilliseconds], [t1].[Id], [t1].[IsExtraTask], [t1].[MaxPoints], [t1].[Name], [t1].[SubmissionType], [r].[Id], [r].[Name]
+FROM (
+    SELECT TOP(1) [l].[CourseId], [l].[Id], [l].[LessonPassword], [l].[Name], [t].[Id] AS [Id0]
+    FROM [Lessons] AS [l]
+    LEFT JOIN (
+        SELECT [p].[Id], [p].[LessonId]
+        FROM [Practices] AS [p]
+        WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t] ON [l].[Id] = [t].[LessonId]
+    WHERE [l].[IsDeleted] = CAST(0 AS bit) AND [l].[IsDeleted] = CAST(0 AS bit) AND [l].[Id] = @__id_0
+) AS [t0]
+LEFT JOIN (
+    SELECT [p0].[AllowedMemoryInMegaBytes], [p0].[AllowedTimeInMilliseconds], [p0].[Id], [p0].[IsExtraTask], [p0].[MaxPoints], [p0].[Name], [p0].[SubmissionType], [p0].[LessonId]
+    FROM [Problems] AS [p0]
+    WHERE [p0].[IsDeleted] = CAST(0 AS bit)
+) AS [t1] ON [t0].[Id] = [t1].[LessonId]
+LEFT JOIN [Resources] AS [r] ON [t0].[Id] = [r].[LessonId]
+ORDER BY [t0].[Id], [t0].[Id0], [t1].[Id]
+2023-08-02 16:37:05.184 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450), @__practiceId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserPractices] AS [u]
+        WHERE [u].[UserId] = @__userId_0 AND [u].[PracticeId] = @__practiceId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:05.185 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 87.9614ms.
+2023-08-02 16:37:05.189 +02:00 [INF] Executing ViewResult, running view Details.
+2023-08-02 16:37:05.224 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 16:37:05.238 +02:00 [INF] Executed ViewResult - view Details executed in 48.9431ms.
+2023-08-02 16:37:05.238 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web) in 171.2895ms
+2023-08-02 16:37:05.242 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Lesson/Details/1?practiceId=1 - - - 200 - text/html;+charset=utf-8 189.2425ms
+2023-08-02 16:37:05.248 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 16:37:05.248 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/lib/codemirror/mode/clike/clike.min.js - -
+2023-08-02 16:37:05.249 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.9954ms
+2023-08-02 16:37:05.262 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 16:37:05.263 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/lib/codemirror/mode/clike/clike.min.js - - - 404 0 - 14.1850ms
+2023-08-02 16:37:05.270 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 7.5143ms
+2023-08-02 16:37:05.328 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Problem/Get/1 - -
+2023-08-02 16:37:05.328 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - -
+2023-08-02 16:37:05.328 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Submission/GetProblemSubmissions?problemId=1&page=1&contestId=undefined - -
+2023-08-02 16:37:05.330 +02:00 [INF] Route matched with {action = "GetSubmissionsCount", controller = "Submission", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetSubmissionsCount(Int32, System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.SubmissionController (JudgeSystem.Web).
+2023-08-02 16:37:05.330 +02:00 [INF] Route matched with {action = "GetProblemSubmissions", controller = "Submission", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProblemSubmissions(Int32, Int32, Int32, System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.SubmissionController (JudgeSystem.Web).
+2023-08-02 16:37:05.332 +02:00 [INF] Route matched with {action = "Get", controller = "Problem", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller JudgeSystem.Web.Controllers.ProblemController (JudgeSystem.Web).
+2023-08-02 16:37:05.350 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.ProblemController.Get (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 16:37:05.373 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) - Validation state: "Invalid"
+2023-08-02 16:37:05.373 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.SubmissionController.GetProblemSubmissions (JudgeSystem.Web) - Validation state: "Invalid"
+2023-08-02 16:37:05.379 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[AllowedMemoryInMegaBytes], [p].[AllowedTimeInMilliseconds]
+FROM [Problems] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit) AND [p].[IsDeleted] = CAST(0 AS bit) AND [p].[Id] = @__id_0
+2023-08-02 16:37:05.381 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.ProblemController.Get (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 31.7589ms.
+2023-08-02 16:37:05.385 +02:00 [INF] Executing OkObjectResult, writing value of type 'JudgeSystem.Web.Dtos.Problem.ProblemConstraintsDto'.
+2023-08-02 16:37:05.391 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.ProblemController.Get (JudgeSystem.Web) in 57.9962ms
+2023-08-02 16:37:05.400 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Problem/Get/1 - - - 200 - application/json;+charset=utf-8 72.7482ms
+2023-08-02 16:37:05.410 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__problemId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Submissions] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ProblemId] = @__problemId_0 AND [s].[UserId] = @__userId_1
+2023-08-02 16:37:05.410 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 37.2159ms.
+2023-08-02 16:37:05.411 +02:00 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2023-08-02 16:37:05.411 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) in 81.1265ms
+2023-08-02 16:37:05.413 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - -
+2023-08-02 16:37:05.413 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - - - 200 - application/json;+charset=utf-8 85.1464ms
+2023-08-02 16:37:05.415 +02:00 [INF] Route matched with {action = "GetSubmissionsCount", controller = "Submission", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetSubmissionsCount(Int32, System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.SubmissionController (JudgeSystem.Web).
+2023-08-02 16:37:05.429 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) - Validation state: "Invalid"
+2023-08-02 16:37:05.430 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__problemId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Submissions] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ProblemId] = @__problemId_0 AND [s].[UserId] = @__userId_1
+2023-08-02 16:37:05.430 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 0.7324ms.
+2023-08-02 16:37:05.430 +02:00 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2023-08-02 16:37:05.430 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) in 14.7977ms
+2023-08-02 16:37:05.431 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - - - 200 - application/json;+charset=utf-8 18.6864ms
+2023-08-02 16:37:05.453 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@__problemId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ActualPoints], [t].[Code], [t].[CompilationErrors], [t].[ContestId], [t].[CreatedOn], [t].[DeletedOn], [t].[IsDeleted], [t].[ModifiedOn], [t].[PracticeId], [t].[ProblemId], [t].[SubmisionDate], [t].[UserId], [t0].[Id], [e0].[Id], [e0].[CreatedOn], [e0].[Error], [e0].[ExecutionResultType], [e0].[IsCorrect], [e0].[MemoryUsed], [e0].[ModifiedOn], [e0].[Output], [e0].[SubmissionId], [e0].[TestId], [e0].[TimeUsed], [t0].[AllowedMemoryInMegaBytes], [t0].[AllowedMinCodeDifferenceInPercentage], [t0].[AllowedTimeInMilliseconds], [t0].[AutomatedTestingProject], [t0].[CreatedOn], [t0].[DeletedOn], [t0].[IsDeleted], [t0].[IsExtraTask], [t0].[LessonId], [t0].[MaxPoints], [t0].[ModifiedOn], [t0].[Name], [t0].[OrderBy], [t0].[SubmissionType], [t0].[TestingStrategy], [t0].[TimeIntervalBetweenSubmissionInSeconds]
+FROM (
+    SELECT [s].[Id], [s].[ActualPoints], [s].[Code], [s].[CompilationErrors], [s].[ContestId], [s].[CreatedOn], [s].[DeletedOn], [s].[IsDeleted], [s].[ModifiedOn], [s].[PracticeId], [s].[ProblemId], [s].[SubmisionDate], [s].[UserId]
+    FROM [Submissions] AS [s]
+    WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ProblemId] = @__problemId_0 AND [s].[UserId] = @__userId_1 AND ((
+        SELECT COUNT(*)
+        FROM [ExecutedTests] AS [e]
+        WHERE [s].[Id] = [e].[SubmissionId]) > 0 OR ([s].[CompilationErrors] IS NOT NULL))
+    ORDER BY [s].[SubmisionDate] DESC
+    OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+) AS [t]
+INNER JOIN (
+    SELECT [p].[Id], [p].[AllowedMemoryInMegaBytes], [p].[AllowedMinCodeDifferenceInPercentage], [p].[AllowedTimeInMilliseconds], [p].[AutomatedTestingProject], [p].[CreatedOn], [p].[DeletedOn], [p].[IsDeleted], [p].[IsExtraTask], [p].[LessonId], [p].[MaxPoints], [p].[ModifiedOn], [p].[Name], [p].[OrderBy], [p].[SubmissionType], [p].[TestingStrategy], [p].[TimeIntervalBetweenSubmissionInSeconds]
+    FROM [Problems] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [t0] ON [t].[ProblemId] = [t0].[Id]
+LEFT JOIN [ExecutedTests] AS [e0] ON [t].[Id] = [e0].[SubmissionId]
+ORDER BY [t].[SubmisionDate] DESC, [t].[Id], [t0].[Id]
+2023-08-02 16:37:05.637 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.SubmissionController.GetProblemSubmissions (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 264.131ms.
+2023-08-02 16:37:05.637 +02:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[JudgeSystem.Web.Dtos.Submission.SubmissionResult, JudgeSystem.Web.Dtos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-02 16:37:05.641 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.SubmissionController.GetProblemSubmissions (JudgeSystem.Web) in 310.345ms
+2023-08-02 16:37:05.650 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Submission/GetProblemSubmissions?problemId=1&page=1&contestId=undefined - - - 200 - application/json;+charset=utf-8 322.4783ms
+2023-08-02 16:37:09.529 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Administration/Resource/LessonResources?lessonId=1&practiceId=1 - -
+2023-08-02 16:37:09.533 +02:00 [INF] Route matched with {area = "Administration", action = "LessonResources", controller = "Resource", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LessonResources(Int32, Int32) on controller JudgeSystem.Web.Areas.Administration.Controllers.ResourceController (JudgeSystem.Web).
+2023-08-02 16:37:09.546 +02:00 [INF] Executing action method JudgeSystem.Web.Areas.Administration.Controllers.ResourceController.LessonResources (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 16:37:09.551 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__lessonId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Name]
+FROM [Resources] AS [r]
+WHERE [r].[LessonId] = @__lessonId_0
+ORDER BY [r].[OrderBy]
+2023-08-02 16:37:09.551 +02:00 [INF] Executed action method JudgeSystem.Web.Areas.Administration.Controllers.ResourceController.LessonResources (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.5021ms.
+2023-08-02 16:37:09.552 +02:00 [INF] Executing ViewResult, running view LessonResources.
+2023-08-02 16:37:09.566 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 16:37:09.572 +02:00 [INF] Executed ViewResult - view LessonResources executed in 21.3501ms.
+2023-08-02 16:37:09.572 +02:00 [INF] Executed action JudgeSystem.Web.Areas.Administration.Controllers.ResourceController.LessonResources (JudgeSystem.Web) in 39.1336ms
+2023-08-02 16:37:09.576 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Administration/Resource/LessonResources?lessonId=1&practiceId=1 - - - 200 - text/html;+charset=utf-8 47.5667ms
+2023-08-02 16:37:09.582 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 16:37:09.582 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.3183ms
+2023-08-02 16:37:09.583 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/js/controllers/resourceController.js - -
+2023-08-02 16:37:09.585 +02:00 [INF] The file /js/controllers/resourceController.js was not modified
+2023-08-02 16:37:09.585 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/js/controllers/resourceController.js - - - 304 - application/javascript 2.5038ms
+2023-08-02 16:37:09.588 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 16:37:09.595 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.9634ms
+2023-08-02 16:37:13.229 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Lesson/Details/1?practiceId=1 - -
+2023-08-02 16:37:13.230 +02:00 [INF] Route matched with {action = "Details", controller = "Lesson", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32, System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.LessonController (JudgeSystem.Web).
+2023-08-02 16:37:13.242 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 16:37:13.244 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[CourseId], [t0].[Id], [t0].[LessonPassword], [t0].[Name], [t0].[Id0], [t1].[AllowedMemoryInMegaBytes], [t1].[AllowedTimeInMilliseconds], [t1].[Id], [t1].[IsExtraTask], [t1].[MaxPoints], [t1].[Name], [t1].[SubmissionType], [r].[Id], [r].[Name]
+FROM (
+    SELECT TOP(1) [l].[CourseId], [l].[Id], [l].[LessonPassword], [l].[Name], [t].[Id] AS [Id0]
+    FROM [Lessons] AS [l]
+    LEFT JOIN (
+        SELECT [p].[Id], [p].[LessonId]
+        FROM [Practices] AS [p]
+        WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t] ON [l].[Id] = [t].[LessonId]
+    WHERE [l].[IsDeleted] = CAST(0 AS bit) AND [l].[IsDeleted] = CAST(0 AS bit) AND [l].[Id] = @__id_0
+) AS [t0]
+LEFT JOIN (
+    SELECT [p0].[AllowedMemoryInMegaBytes], [p0].[AllowedTimeInMilliseconds], [p0].[Id], [p0].[IsExtraTask], [p0].[MaxPoints], [p0].[Name], [p0].[SubmissionType], [p0].[LessonId]
+    FROM [Problems] AS [p0]
+    WHERE [p0].[IsDeleted] = CAST(0 AS bit)
+) AS [t1] ON [t0].[Id] = [t1].[LessonId]
+LEFT JOIN [Resources] AS [r] ON [t0].[Id] = [r].[LessonId]
+ORDER BY [t0].[Id], [t0].[Id0], [t1].[Id]
+2023-08-02 16:37:13.246 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450), @__practiceId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserPractices] AS [u]
+        WHERE [u].[UserId] = @__userId_0 AND [u].[PracticeId] = @__practiceId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 16:37:13.246 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3.6307ms.
+2023-08-02 16:37:13.246 +02:00 [INF] Executing ViewResult, running view Details.
+2023-08-02 16:37:13.248 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 16:37:13.256 +02:00 [INF] Executed ViewResult - view Details executed in 10.1444ms.
+2023-08-02 16:37:13.257 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web) in 26.4651ms
+2023-08-02 16:37:13.262 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Lesson/Details/1?practiceId=1 - - - 200 - text/html;+charset=utf-8 32.8615ms
+2023-08-02 16:37:13.267 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/lib/codemirror/mode/clike/clike.min.js - -
+2023-08-02 16:37:13.268 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 16:37:13.268 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.2541ms
+2023-08-02 16:37:13.271 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/lib/codemirror/mode/clike/clike.min.js - - - 404 0 - 3.8478ms
+2023-08-02 16:37:13.275 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 16:37:13.279 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.2237ms
+2023-08-02 16:37:13.316 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Problem/Get/1 - -
+2023-08-02 16:37:13.317 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - -
+2023-08-02 16:37:13.317 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Submission/GetProblemSubmissions?problemId=1&page=1&contestId=undefined - -
+2023-08-02 16:37:13.318 +02:00 [INF] Route matched with {action = "GetSubmissionsCount", controller = "Submission", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetSubmissionsCount(Int32, System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.SubmissionController (JudgeSystem.Web).
+2023-08-02 16:37:13.318 +02:00 [INF] Route matched with {action = "GetProblemSubmissions", controller = "Submission", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProblemSubmissions(Int32, Int32, Int32, System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.SubmissionController (JudgeSystem.Web).
+2023-08-02 16:37:13.318 +02:00 [INF] Route matched with {action = "Get", controller = "Problem", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller JudgeSystem.Web.Controllers.ProblemController (JudgeSystem.Web).
+2023-08-02 16:37:13.354 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.ProblemController.Get (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 16:37:13.354 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) - Validation state: "Invalid"
+2023-08-02 16:37:13.354 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.SubmissionController.GetProblemSubmissions (JudgeSystem.Web) - Validation state: "Invalid"
+2023-08-02 16:37:13.356 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__problemId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Submissions] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ProblemId] = @__problemId_0 AND [s].[UserId] = @__userId_1
+2023-08-02 16:37:13.356 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[AllowedMemoryInMegaBytes], [p].[AllowedTimeInMilliseconds]
+FROM [Problems] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit) AND [p].[IsDeleted] = CAST(0 AS bit) AND [p].[Id] = @__id_0
+2023-08-02 16:37:13.357 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 2.012ms.
+2023-08-02 16:37:13.357 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.ProblemController.Get (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.3133ms.
+2023-08-02 16:37:13.357 +02:00 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2023-08-02 16:37:13.358 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) in 39.9293ms
+2023-08-02 16:37:13.358 +02:00 [INF] Executing OkObjectResult, writing value of type 'JudgeSystem.Web.Dtos.Problem.ProblemConstraintsDto'.
+2023-08-02 16:37:13.358 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__problemId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ActualPoints], [t].[Code], [t].[CompilationErrors], [t].[ContestId], [t].[CreatedOn], [t].[DeletedOn], [t].[IsDeleted], [t].[ModifiedOn], [t].[PracticeId], [t].[ProblemId], [t].[SubmisionDate], [t].[UserId], [t0].[Id], [e0].[Id], [e0].[CreatedOn], [e0].[Error], [e0].[ExecutionResultType], [e0].[IsCorrect], [e0].[MemoryUsed], [e0].[ModifiedOn], [e0].[Output], [e0].[SubmissionId], [e0].[TestId], [e0].[TimeUsed], [t0].[AllowedMemoryInMegaBytes], [t0].[AllowedMinCodeDifferenceInPercentage], [t0].[AllowedTimeInMilliseconds], [t0].[AutomatedTestingProject], [t0].[CreatedOn], [t0].[DeletedOn], [t0].[IsDeleted], [t0].[IsExtraTask], [t0].[LessonId], [t0].[MaxPoints], [t0].[ModifiedOn], [t0].[Name], [t0].[OrderBy], [t0].[SubmissionType], [t0].[TestingStrategy], [t0].[TimeIntervalBetweenSubmissionInSeconds]
+FROM (
+    SELECT [s].[Id], [s].[ActualPoints], [s].[Code], [s].[CompilationErrors], [s].[ContestId], [s].[CreatedOn], [s].[DeletedOn], [s].[IsDeleted], [s].[ModifiedOn], [s].[PracticeId], [s].[ProblemId], [s].[SubmisionDate], [s].[UserId]
+    FROM [Submissions] AS [s]
+    WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ProblemId] = @__problemId_0 AND [s].[UserId] = @__userId_1 AND ((
+        SELECT COUNT(*)
+        FROM [ExecutedTests] AS [e]
+        WHERE [s].[Id] = [e].[SubmissionId]) > 0 OR ([s].[CompilationErrors] IS NOT NULL))
+    ORDER BY [s].[SubmisionDate] DESC
+    OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+) AS [t]
+INNER JOIN (
+    SELECT [p].[Id], [p].[AllowedMemoryInMegaBytes], [p].[AllowedMinCodeDifferenceInPercentage], [p].[AllowedTimeInMilliseconds], [p].[AutomatedTestingProject], [p].[CreatedOn], [p].[DeletedOn], [p].[IsDeleted], [p].[IsExtraTask], [p].[LessonId], [p].[MaxPoints], [p].[ModifiedOn], [p].[Name], [p].[OrderBy], [p].[SubmissionType], [p].[TestingStrategy], [p].[TimeIntervalBetweenSubmissionInSeconds]
+    FROM [Problems] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [t0] ON [t].[ProblemId] = [t0].[Id]
+LEFT JOIN [ExecutedTests] AS [e0] ON [t].[Id] = [e0].[SubmissionId]
+ORDER BY [t].[SubmisionDate] DESC, [t].[Id], [t0].[Id]
+2023-08-02 16:37:13.358 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.ProblemController.Get (JudgeSystem.Web) in 40.2634ms
+2023-08-02 16:37:13.361 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - -
+2023-08-02 16:37:13.366 +02:00 [INF] Route matched with {action = "GetSubmissionsCount", controller = "Submission", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetSubmissionsCount(Int32, System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.SubmissionController (JudgeSystem.Web).
+2023-08-02 16:37:13.381 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) - Validation state: "Invalid"
+2023-08-02 16:37:13.381 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - - - 200 - application/json;+charset=utf-8 64.5823ms
+2023-08-02 16:37:13.388 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__problemId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Submissions] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ProblemId] = @__problemId_0 AND [s].[UserId] = @__userId_1
+2023-08-02 16:37:13.388 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 6.431ms.
+2023-08-02 16:37:13.389 +02:00 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2023-08-02 16:37:13.389 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) in 22.3075ms
+2023-08-02 16:37:13.389 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Problem/Get/1 - - - 200 - application/json;+charset=utf-8 72.2559ms
+2023-08-02 16:37:13.392 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - - - 200 - application/json;+charset=utf-8 30.8872ms
+2023-08-02 16:37:13.450 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.SubmissionController.GetProblemSubmissions (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 95.2862ms.
+2023-08-02 16:37:13.450 +02:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[JudgeSystem.Web.Dtos.Submission.SubmissionResult, JudgeSystem.Web.Dtos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-02 16:37:13.450 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.SubmissionController.GetProblemSubmissions (JudgeSystem.Web) in 132.1997ms
+2023-08-02 16:37:13.451 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Submission/GetProblemSubmissions?problemId=1&page=1&contestId=undefined - - - 200 - application/json;+charset=utf-8 134.7179ms
+2023-08-02 16:37:14.497 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Practice/Results/1 - -
+2023-08-02 16:37:14.499 +02:00 [INF] Route matched with {action = "Results", controller = "Practice", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Results(Int32, Int32) on controller JudgeSystem.Web.Controllers.PracticeController (JudgeSystem.Web).
+2023-08-02 16:37:14.514 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.PracticeController.Results (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 16:37:14.539 +02:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2023-08-02 16:37:14.560 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[CreatedOn], [t0].[DeletedOn], [t0].[IsDeleted], [t0].[LessonId], [t0].[ModifiedOn], [t0].[Id0], [t0].[CourseId], [t0].[CreatedOn0], [t0].[DeletedOn0], [t0].[IsDeleted0], [t0].[LessonPassword], [t0].[ModifiedOn0], [t0].[Name], [t0].[OrderBy], [t0].[Type], [t1].[Id], [t1].[AllowedMemoryInMegaBytes], [t1].[AllowedMinCodeDifferenceInPercentage], [t1].[AllowedTimeInMilliseconds], [t1].[AutomatedTestingProject], [t1].[CreatedOn], [t1].[DeletedOn], [t1].[IsDeleted], [t1].[IsExtraTask], [t1].[LessonId], [t1].[MaxPoints], [t1].[ModifiedOn], [t1].[Name], [t1].[OrderBy], [t1].[SubmissionType], [t1].[TestingStrategy], [t1].[TimeIntervalBetweenSubmissionInSeconds], [t2].[PracticeId], [t2].[UserId], [t2].[Id], [t2].[AccessFailedCount], [t2].[ConcurrencyStamp], [t2].[CreatedOn], [t2].[DeletedOn], [t2].[Email], [t2].[EmailConfirmed], [t2].[IsDeleted], [t2].[IsFromActiveDirectory], [t2].[LockoutEnabled], [t2].[LockoutEnd], [t2].[ModifiedOn], [t2].[Name], [t2].[NormalizedEmail], [t2].[NormalizedUserName], [t2].[PasswordHash], [t2].[PhoneNumber], [t2].[PhoneNumberConfirmed], [t2].[SecurityStamp], [t2].[StudentId], [t2].[Surname], [t2].[TwoFactorEnabled], [t2].[UserName], [t2].[Id0], [t2].[ActualPoints], [t2].[Code], [t2].[CompilationErrors], [t2].[ContestId], [t2].[CreatedOn0], [t2].[DeletedOn0], [t2].[IsDeleted0], [t2].[ModifiedOn0], [t2].[PracticeId0], [t2].[ProblemId], [t2].[SubmisionDate], [t2].[UserId0]
+FROM (
+    SELECT TOP(1) [p].[Id], [p].[CreatedOn], [p].[DeletedOn], [p].[IsDeleted], [p].[LessonId], [p].[ModifiedOn], [t].[Id] AS [Id0], [t].[CourseId], [t].[CreatedOn] AS [CreatedOn0], [t].[DeletedOn] AS [DeletedOn0], [t].[IsDeleted] AS [IsDeleted0], [t].[LessonPassword], [t].[ModifiedOn] AS [ModifiedOn0], [t].[Name], [t].[OrderBy], [t].[Type]
+    FROM [Practices] AS [p]
+    INNER JOIN (
+        SELECT [l].[Id], [l].[CourseId], [l].[CreatedOn], [l].[DeletedOn], [l].[IsDeleted], [l].[LessonPassword], [l].[ModifiedOn], [l].[Name], [l].[OrderBy], [l].[Type]
+        FROM [Lessons] AS [l]
+        WHERE [l].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t] ON [p].[LessonId] = [t].[Id]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit) AND [p].[IsDeleted] = CAST(0 AS bit) AND [p].[Id] = @__id_0
+) AS [t0]
+LEFT JOIN (
+    SELECT [p0].[Id], [p0].[AllowedMemoryInMegaBytes], [p0].[AllowedMinCodeDifferenceInPercentage], [p0].[AllowedTimeInMilliseconds], [p0].[AutomatedTestingProject], [p0].[CreatedOn], [p0].[DeletedOn], [p0].[IsDeleted], [p0].[IsExtraTask], [p0].[LessonId], [p0].[MaxPoints], [p0].[ModifiedOn], [p0].[Name], [p0].[OrderBy], [p0].[SubmissionType], [p0].[TestingStrategy], [p0].[TimeIntervalBetweenSubmissionInSeconds]
+    FROM [Problems] AS [p0]
+    WHERE [p0].[IsDeleted] = CAST(0 AS bit)
+) AS [t1] ON [t0].[Id0] = [t1].[LessonId]
+LEFT JOIN (
+    SELECT [u].[PracticeId], [u].[UserId], [t3].[Id], [t3].[AccessFailedCount], [t3].[ConcurrencyStamp], [t3].[CreatedOn], [t3].[DeletedOn], [t3].[Email], [t3].[EmailConfirmed], [t3].[IsDeleted], [t3].[IsFromActiveDirectory], [t3].[LockoutEnabled], [t3].[LockoutEnd], [t3].[ModifiedOn], [t3].[Name], [t3].[NormalizedEmail], [t3].[NormalizedUserName], [t3].[PasswordHash], [t3].[PhoneNumber], [t3].[PhoneNumberConfirmed], [t3].[SecurityStamp], [t3].[StudentId], [t3].[Surname], [t3].[TwoFactorEnabled], [t3].[UserName], [t4].[Id] AS [Id0], [t4].[ActualPoints], [t4].[Code], [t4].[CompilationErrors], [t4].[ContestId], [t4].[CreatedOn] AS [CreatedOn0], [t4].[DeletedOn] AS [DeletedOn0], [t4].[IsDeleted] AS [IsDeleted0], [t4].[ModifiedOn] AS [ModifiedOn0], [t4].[PracticeId] AS [PracticeId0], [t4].[ProblemId], [t4].[SubmisionDate], [t4].[UserId] AS [UserId0]
+    FROM [UserPractices] AS [u]
+    INNER JOIN (
+        SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[IsFromActiveDirectory], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedOn], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[StudentId], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t3] ON [u].[UserId] = [t3].[Id]
+    LEFT JOIN (
+        SELECT [s].[Id], [s].[ActualPoints], [s].[Code], [s].[CompilationErrors], [s].[ContestId], [s].[CreatedOn], [s].[DeletedOn], [s].[IsDeleted], [s].[ModifiedOn], [s].[PracticeId], [s].[ProblemId], [s].[SubmisionDate], [s].[UserId]
+        FROM [Submissions] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t4] ON [t3].[Id] = [t4].[UserId]
+) AS [t2] ON [t0].[Id] = [t2].[PracticeId]
+ORDER BY [t0].[Id], [t0].[Id0], [t1].[Id], [t2].[PracticeId], [t2].[UserId], [t2].[Id]
+2023-08-02 16:37:14.720 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [UserPractices] AS [u]
+WHERE [u].[PracticeId] = @__id_0
+2023-08-02 16:37:14.721 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.PracticeController.Results (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 207.2852ms.
+2023-08-02 16:37:14.722 +02:00 [INF] Executing ViewResult, running view Results.
+2023-08-02 16:37:14.743 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 16:37:14.749 +02:00 [INF] Executed ViewResult - view Results executed in 28.1236ms.
+2023-08-02 16:37:14.749 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.PracticeController.Results (JudgeSystem.Web) in 250.4589ms
+2023-08-02 16:37:14.753 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Practice/Results/1 - - - 200 - text/html;+charset=utf-8 256.5978ms
+2023-08-02 16:37:14.760 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 16:37:14.760 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.3330ms
+2023-08-02 16:37:14.768 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 16:37:14.773 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.5897ms
+2023-08-02 16:37:20.730 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/lib/popper.js/umd/popper.min.js.map - -
+2023-08-02 16:37:20.730 +02:00 [INF] The file /lib/popper.js/umd/popper.min.js.map was not modified
+2023-08-02 16:37:20.731 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/lib/popper.js/umd/popper.min.js.map - - - 304 - text/plain 0.5724ms
+2023-08-02 16:37:20.731 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/lib/bootstrap/dist/js/bootstrap.js.map - -
+2023-08-02 16:37:20.735 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/lib/bootstrap/dist/js/bootstrap.js.map - - - 404 0 - 4.3800ms
+2023-08-02 16:37:20.765 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/lib/bootstrap/dist/css/bootstrap.css.map - -
+2023-08-02 16:37:20.765 +02:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.css.map was not modified
+2023-08-02 16:37:20.766 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/lib/bootstrap/dist/css/bootstrap.css.map - - - 304 - text/plain 0.9396ms
+2023-08-02 16:37:32.142 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Administration/Course/Create - -
+2023-08-02 16:37:32.148 +02:00 [INF] Route matched with {area = "Administration", action = "Create", controller = "Course", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller JudgeSystem.Web.Areas.Administration.Controllers.CourseController (JudgeSystem.Web).
+2023-08-02 16:37:32.162 +02:00 [INF] Executing action method JudgeSystem.Web.Areas.Administration.Controllers.CourseController.Create (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 16:37:32.162 +02:00 [INF] Executed action method JudgeSystem.Web.Areas.Administration.Controllers.CourseController.Create (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.1276ms.
+2023-08-02 16:37:32.171 +02:00 [INF] Executing ViewResult, running view Create.
+2023-08-02 16:37:32.199 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 16:37:32.204 +02:00 [INF] Executed ViewResult - view Create executed in 42.0133ms.
+2023-08-02 16:37:32.204 +02:00 [INF] Executed action JudgeSystem.Web.Areas.Administration.Controllers.CourseController.Create (JudgeSystem.Web) in 56.2002ms
+2023-08-02 16:37:32.207 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Administration/Course/Create - - - 200 - text/html;+charset=utf-8 65.0380ms
+2023-08-02 16:37:32.220 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 16:37:32.221 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.2556ms
+2023-08-02 16:37:32.238 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 16:37:32.251 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.5421ms
+2023-08-02 16:37:33.265 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Administration/Contest/Create - -
+2023-08-02 16:37:33.267 +02:00 [INF] Route matched with {area = "Administration", action = "Create", controller = "Contest", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create() on controller JudgeSystem.Web.Areas.Administration.Controllers.ContestController (JudgeSystem.Web).
+2023-08-02 16:37:33.280 +02:00 [INF] Executing action method JudgeSystem.Web.Areas.Administration.Controllers.ContestController.Create (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 16:37:33.280 +02:00 [INF] Executed action method JudgeSystem.Web.Areas.Administration.Controllers.ContestController.Create (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.131ms.
+2023-08-02 16:37:33.281 +02:00 [INF] Executing ViewResult, running view Create.
+2023-08-02 16:37:33.310 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 16:37:33.321 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 16:37:33.332 +02:00 [INF] Executed ViewResult - view Create executed in 51.3427ms.
+2023-08-02 16:37:33.332 +02:00 [INF] Executed action JudgeSystem.Web.Areas.Administration.Controllers.ContestController.Create (JudgeSystem.Web) in 64.4656ms
+2023-08-02 16:37:33.335 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Administration/Contest/Create - - - 200 - text/html;+charset=utf-8 70.1763ms
+2023-08-02 16:37:33.341 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 16:37:33.341 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.3295ms
+2023-08-02 16:37:33.350 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 16:37:33.354 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.4484ms
+2023-08-02 16:37:34.859 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Administration/Contest/ActiveContests - -
+2023-08-02 16:37:34.861 +02:00 [INF] Route matched with {area = "Administration", action = "ActiveContests", controller = "Contest", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult ActiveContests() on controller JudgeSystem.Web.Areas.Administration.Controllers.ContestController (JudgeSystem.Web).
+2023-08-02 16:37:34.873 +02:00 [INF] Executing action method JudgeSystem.Web.Areas.Administration.Controllers.ContestController.ActiveContests (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 16:37:34.878 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Contests] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit) AND [c].[EndTime] > GETDATE()
+2023-08-02 16:37:34.878 +02:00 [INF] Executed action method JudgeSystem.Web.Areas.Administration.Controllers.ContestController.ActiveContests (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 5.1924ms.
+2023-08-02 16:37:34.879 +02:00 [INF] Executing ViewResult, running view ActiveContests.
+2023-08-02 16:37:34.894 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 16:37:34.899 +02:00 [INF] Executed ViewResult - view ActiveContests executed in 20.053ms.
+2023-08-02 16:37:34.899 +02:00 [INF] Executed action JudgeSystem.Web.Areas.Administration.Controllers.ContestController.ActiveContests (JudgeSystem.Web) in 37.7167ms
+2023-08-02 16:37:34.902 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Administration/Contest/ActiveContests - - - 200 - text/html;+charset=utf-8 42.7792ms
+2023-08-02 16:37:34.910 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 16:37:34.910 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.2726ms
+2023-08-02 16:37:34.915 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 16:37:34.920 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 5.0426ms
+2023-08-02 16:37:37.746 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Administration/Contest/All - -
+2023-08-02 16:37:37.748 +02:00 [INF] Route matched with {area = "Administration", action = "All", controller = "Contest", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult All(Int32) on controller JudgeSystem.Web.Areas.Administration.Controllers.ContestController (JudgeSystem.Web).
+2023-08-02 16:37:37.760 +02:00 [INF] Executing action method JudgeSystem.Web.Areas.Administration.Controllers.ContestController.All (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 16:37:37.765 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[EndTime], [c].[Id], [c].[Name], [c].[StartTime]
+FROM [Contests] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[StartTime] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-08-02 16:37:37.768 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contests] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+2023-08-02 16:37:37.769 +02:00 [INF] Executed action method JudgeSystem.Web.Areas.Administration.Controllers.ContestController.All (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.0018ms.
+2023-08-02 16:37:37.769 +02:00 [INF] Executing ViewResult, running view All.
+2023-08-02 16:37:37.779 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 16:37:37.784 +02:00 [INF] Executed ViewResult - view All executed in 15.5678ms.
+2023-08-02 16:37:37.784 +02:00 [INF] Executed action JudgeSystem.Web.Areas.Administration.Controllers.ContestController.All (JudgeSystem.Web) in 36.673ms
+2023-08-02 16:37:37.793 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Administration/Contest/All - - - 200 - text/html;+charset=utf-8 47.0603ms
+2023-08-02 16:37:37.798 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 16:37:37.798 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.3175ms
+2023-08-02 16:37:37.804 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 16:37:37.808 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.9089ms
+2023-08-02 16:37:39.702 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Administration/Contest/Results/2 - -
+2023-08-02 16:37:39.712 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Administration/Contest/Results/2 - - - 404 0 - 10.7824ms
+2023-08-02 16:37:41.069 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Administration/Contest/All - -
+2023-08-02 16:37:41.071 +02:00 [INF] Route matched with {area = "Administration", action = "All", controller = "Contest", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult All(Int32) on controller JudgeSystem.Web.Areas.Administration.Controllers.ContestController (JudgeSystem.Web).
+2023-08-02 16:37:41.086 +02:00 [INF] Executing action method JudgeSystem.Web.Areas.Administration.Controllers.ContestController.All (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 16:37:41.087 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[EndTime], [c].[Id], [c].[Name], [c].[StartTime]
+FROM [Contests] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[StartTime] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-08-02 16:37:41.087 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contests] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+2023-08-02 16:37:41.087 +02:00 [INF] Executed action method JudgeSystem.Web.Areas.Administration.Controllers.ContestController.All (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.2698ms.
+2023-08-02 16:37:41.087 +02:00 [INF] Executing ViewResult, running view All.
+2023-08-02 16:37:41.089 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 16:37:41.094 +02:00 [INF] Executed ViewResult - view All executed in 6.598ms.
+2023-08-02 16:37:41.094 +02:00 [INF] Executed action JudgeSystem.Web.Areas.Administration.Controllers.ContestController.All (JudgeSystem.Web) in 23.3211ms
+2023-08-02 16:37:41.098 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Administration/Contest/All - - - 200 - text/html;+charset=utf-8 28.8143ms
+2023-08-02 16:37:41.113 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 16:37:41.113 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.2557ms
+2023-08-02 16:37:42.055 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/ - -
+2023-08-02 16:37:42.057 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller JudgeSystem.Web.Controllers.HomeController (JudgeSystem.Web).
+2023-08-02 16:37:42.069 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.HomeController.Index (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 16:37:42.069 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.HomeController.Index (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0126ms.
+2023-08-02 16:37:42.069 +02:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 16:37:42.072 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[EndTime], [c].[Id], [c].[LessonId], [c].[Name]
+FROM [Contests] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit) AND [c].[StartTime] < @__now_0 AND [c].[EndTime] > @__now_0
+2023-08-02 16:37:42.075 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[EndTime], [c].[LessonId], [t0].[Id], [c].[Name]
+FROM [Contests] AS [c]
+INNER JOIN (
+    SELECT [l].[Id]
+    FROM [Lessons] AS [l]
+    WHERE [l].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [c].[LessonId] = [t].[Id]
+LEFT JOIN (
+    SELECT [p].[Id], [p].[LessonId]
+    FROM [Practices] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [t0] ON [t].[Id] = [t0].[LessonId]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit) AND [c].[EndTime] < GETDATE() AND [c].[EndTime] >= DATEADD(day, CAST(@__p_0 AS int), GETDATE())
+2023-08-02 16:37:42.076 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 16:37:42.079 +02:00 [INF] Executed ViewResult - view Index executed in 10.2258ms.
+2023-08-02 16:37:42.079 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.HomeController.Index (JudgeSystem.Web) in 22.5757ms
+2023-08-02 16:37:42.089 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/ - - - 200 - text/html;+charset=utf-8 33.5334ms
+2023-08-02 16:37:42.093 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 16:37:42.093 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.2321ms
+2023-08-02 16:37:42.106 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 16:37:42.111 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.8390ms
+2023-08-02 17:02:14.778 +02:00 [WRN] Entity 'AllowedIpAddress' has a global query filter defined and is the required end of a relationship with the entity 'AllowedIpAddressContest'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 17:02:14.811 +02:00 [WRN] Entity 'Submission' has a global query filter defined and is the required end of a relationship with the entity 'ExecutedTest'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 17:02:14.811 +02:00 [WRN] Entity 'Lesson' has a global query filter defined and is the required end of a relationship with the entity 'Resource'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 17:02:14.811 +02:00 [WRN] Entity 'SchoolClass' has a global query filter defined and is the required end of a relationship with the entity 'Student'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 17:02:14.811 +02:00 [WRN] Entity 'Problem' has a global query filter defined and is the required end of a relationship with the entity 'Test'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 17:02:14.811 +02:00 [WRN] Entity 'Contest' has a global query filter defined and is the required end of a relationship with the entity 'UserContest'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 17:02:14.811 +02:00 [WRN] Entity 'Practice' has a global query filter defined and is the required end of a relationship with the entity 'UserPractice'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 17:02:15.463 +02:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-02 17:02:15.508 +02:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-08-02 17:02:15.511 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-02 17:02:15.512 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-08-02 17:02:15.539 +02:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-08-02 17:02:15.563 +02:00 [INF] No migrations were applied. The database is already up to date.
+2023-08-02 17:02:16.069 +02:00 [INF] Executed DbCommand (52ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[IsDeleted], [a].[ModifiedOn], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedName] = @__normalizedName_0
+2023-08-02 17:02:16.161 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[IsDeleted], [a].[ModifiedOn], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedName] = @__normalizedName_0
+2023-08-02 17:02:16.162 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[IsDeleted], [a].[ModifiedOn], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedName] = @__normalizedName_0
+2023-08-02 17:02:16.163 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[IsDeleted], [a].[ModifiedOn], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedName] = @__normalizedName_0
+2023-08-02 17:02:16.196 +02:00 [INF] Seeder RolesSeeder done.
+2023-08-02 17:02:16.242 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.244 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.244 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.245 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.245 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.245 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.246 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.246 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.247 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.247 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.248 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.248 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.248 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.249 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.249 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.249 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.250 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.250 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.250 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.250 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.251 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.251 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.251 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.252 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.252 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:16.258 +02:00 [INF] Seeder SchoolClassesSeeder done.
+2023-08-02 17:02:16.274 +02:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 17:02:16.287 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[IsFromActiveDirectory], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedOn], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[StudentId], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-08-02 17:02:16.346 +02:00 [INF] Seeder AdminSeeder done.
+2023-08-02 17:02:16.989 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/ - -
+2023-08-02 17:02:17.115 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[IsFromActiveDirectory], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedOn], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[StudentId], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[Id] = @__p_0
+2023-08-02 17:02:17.192 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-08-02 17:02:17.241 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN (
+    SELECT [a0].[Id], [a0].[Name]
+    FROM [AspNetRoles] AS [a0]
+    WHERE [a0].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [a].[RoleId] = [t].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-08-02 17:02:17.244 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[IsDeleted], [a].[ModifiedOn], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedName] = @__normalizedName_0
+2023-08-02 17:02:17.252 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-08-02 17:02:17.253 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[IsDeleted], [a].[ModifiedOn], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedName] = @__normalizedName_0
+2023-08-02 17:02:17.255 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-08-02 17:02:17.441 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller JudgeSystem.Web.Controllers.HomeController (JudgeSystem.Web).
+2023-08-02 17:02:17.521 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.HomeController.Index (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 17:02:17.525 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.HomeController.Index (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5356ms.
+2023-08-02 17:02:17.535 +02:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 17:02:17.607 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[EndTime], [c].[Id], [c].[LessonId], [c].[Name]
+FROM [Contests] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit) AND [c].[StartTime] < @__now_0 AND [c].[EndTime] > @__now_0
+2023-08-02 17:02:17.668 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[EndTime], [c].[LessonId], [t0].[Id], [c].[Name]
+FROM [Contests] AS [c]
+INNER JOIN (
+    SELECT [l].[Id]
+    FROM [Lessons] AS [l]
+    WHERE [l].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [c].[LessonId] = [t].[Id]
+LEFT JOIN (
+    SELECT [p].[Id], [p].[LessonId]
+    FROM [Practices] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [t0] ON [t].[Id] = [t0].[LessonId]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit) AND [c].[EndTime] < GETDATE() AND [c].[EndTime] >= DATEADD(day, CAST(@__p_0 AS int), GETDATE())
+2023-08-02 17:02:17.989 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[PracticeId]
+FROM [UserPractices] AS [u]
+WHERE [u].[UserId] = @__userId_0
+2023-08-02 17:02:18.004 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[Name], [t].[Id] AS [PracticeId], [l].[Type]
+FROM [Lessons] AS [l]
+LEFT JOIN (
+    SELECT [p].[Id], [p].[LessonId]
+    FROM [Practices] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [l].[Id] = [t].[LessonId]
+WHERE [l].[IsDeleted] = CAST(0 AS bit) AND [l].[IsDeleted] = CAST(0 AS bit) AND ([t].[Id] <> 1 OR ([t].[Id] IS NULL))
+2023-08-02 17:02:18.084 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 17:02:18.282 +02:00 [INF] Executed ViewResult - view Index executed in 749.9858ms.
+2023-08-02 17:02:18.289 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.HomeController.Index (JudgeSystem.Web) in 847.6257ms
+2023-08-02 17:02:18.342 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/css/site.css?v=91KmxjhsZ8PXxNxUrHHh_x1bCBSAuW3xIi58MqoC11M - -
+2023-08-02 17:02:18.343 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/lib/codemirror/codemirror.css?v=60lOqXLSZh74b39qxlbdZ4bXIeScnBtG4euWfktvm_M - -
+2023-08-02 17:02:18.350 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 17:02:18.356 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/ - - - 200 - text/html;+charset=utf-8 1373.4158ms
+2023-08-02 17:02:18.356 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 5.3227ms
+2023-08-02 17:02:18.360 +02:00 [INF] The file /css/site.css was not modified
+2023-08-02 17:02:18.360 +02:00 [INF] The file /lib/codemirror/codemirror.css was not modified
+2023-08-02 17:02:18.361 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/lib/codemirror/codemirror.css?v=60lOqXLSZh74b39qxlbdZ4bXIeScnBtG4euWfktvm_M - - - 304 - text/css 17.6971ms
+2023-08-02 17:02:18.361 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/css/site.css?v=91KmxjhsZ8PXxNxUrHHh_x1bCBSAuW3xIi58MqoC11M - - - 304 - text/css 18.4783ms
+2023-08-02 17:02:18.376 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 17:02:18.399 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.3562ms
+2023-08-02 17:02:20.769 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Course/Lessons?courseId=1 - -
+2023-08-02 17:02:20.780 +02:00 [INF] Route matched with {action = "Lessons", controller = "Course", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Lessons(Int32) on controller JudgeSystem.Web.Controllers.CourseController (JudgeSystem.Web).
+2023-08-02 17:02:20.810 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.CourseController.Lessons (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 17:02:20.880 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@__courseId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [t].[Id], [t0].[Id], [t0].[Name], [l].[CourseId], [l].[Name], (
+    SELECT COUNT(*)
+    FROM [Problems] AS [p0]
+    WHERE [p0].[IsDeleted] = CAST(0 AS bit) AND [l].[Id] = [p0].[LessonId]), [l].[Type]
+FROM [Lessons] AS [l]
+LEFT JOIN (
+    SELECT [p].[Id], [p].[LessonId]
+    FROM [Practices] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [l].[Id] = [t].[LessonId]
+LEFT JOIN (
+    SELECT [c].[Id], [c].[Name], [c].[LessonId]
+    FROM [Contests] AS [c]
+    WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[StartTime] < GETDATE() AND [c].[EndTime] > GETDATE()
+) AS [t0] ON [l].[Id] = [t0].[LessonId]
+WHERE [l].[IsDeleted] = CAST(0 AS bit) AND [l].[IsDeleted] = CAST(0 AS bit) AND [l].[CourseId] = @__courseId_0
+ORDER BY [l].[Id], [t].[Id]
+2023-08-02 17:02:20.886 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__courseId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Id] = @__courseId_0
+2023-08-02 17:02:20.886 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.CourseController.Lessons (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 76.2124ms.
+2023-08-02 17:02:20.887 +02:00 [INF] Executing ViewResult, running view Lessons.
+2023-08-02 17:02:20.902 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 17:02:20.907 +02:00 [INF] Executed ViewResult - view Lessons executed in 20.9562ms.
+2023-08-02 17:02:20.907 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.CourseController.Lessons (JudgeSystem.Web) in 127.7432ms
+2023-08-02 17:02:20.911 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Course/Lessons?courseId=1 - - - 200 - text/html;+charset=utf-8 142.1845ms
+2023-08-02 17:02:20.918 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 17:02:20.918 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.4287ms
+2023-08-02 17:02:20.930 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 17:02:20.941 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.5696ms
+2023-08-02 17:02:23.133 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Lesson/Details/1?practiceId=1 - -
+2023-08-02 17:02:23.145 +02:00 [INF] Route matched with {action = "Details", controller = "Lesson", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32, System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.LessonController (JudgeSystem.Web).
+2023-08-02 17:02:23.168 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 17:02:23.193 +02:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2023-08-02 17:02:23.203 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[CourseId], [t0].[Id], [t0].[LessonPassword], [t0].[Name], [t0].[Id0], [t1].[AllowedMemoryInMegaBytes], [t1].[AllowedTimeInMilliseconds], [t1].[Id], [t1].[IsExtraTask], [t1].[MaxPoints], [t1].[Name], [t1].[SubmissionType], [r].[Id], [r].[Name]
+FROM (
+    SELECT TOP(1) [l].[CourseId], [l].[Id], [l].[LessonPassword], [l].[Name], [t].[Id] AS [Id0]
+    FROM [Lessons] AS [l]
+    LEFT JOIN (
+        SELECT [p].[Id], [p].[LessonId]
+        FROM [Practices] AS [p]
+        WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t] ON [l].[Id] = [t].[LessonId]
+    WHERE [l].[IsDeleted] = CAST(0 AS bit) AND [l].[IsDeleted] = CAST(0 AS bit) AND [l].[Id] = @__id_0
+) AS [t0]
+LEFT JOIN (
+    SELECT [p0].[AllowedMemoryInMegaBytes], [p0].[AllowedTimeInMilliseconds], [p0].[Id], [p0].[IsExtraTask], [p0].[MaxPoints], [p0].[Name], [p0].[SubmissionType], [p0].[LessonId]
+    FROM [Problems] AS [p0]
+    WHERE [p0].[IsDeleted] = CAST(0 AS bit)
+) AS [t1] ON [t0].[Id] = [t1].[LessonId]
+LEFT JOIN [Resources] AS [r] ON [t0].[Id] = [r].[LessonId]
+ORDER BY [t0].[Id], [t0].[Id0], [t1].[Id]
+2023-08-02 17:02:23.211 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (Size = 450), @__practiceId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserPractices] AS [u]
+        WHERE [u].[UserId] = @__userId_0 AND [u].[PracticeId] = @__practiceId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:23.213 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 44.4543ms.
+2023-08-02 17:02:23.217 +02:00 [INF] Executing ViewResult, running view Details.
+2023-08-02 17:02:23.244 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 17:02:23.251 +02:00 [INF] Executed ViewResult - view Details executed in 34.6519ms.
+2023-08-02 17:02:23.251 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web) in 106.585ms
+2023-08-02 17:02:23.256 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Lesson/Details/1?practiceId=1 - - - 200 - text/html;+charset=utf-8 122.5761ms
+2023-08-02 17:02:23.263 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 17:02:23.263 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/lib/codemirror/mode/clike/clike.min.js - -
+2023-08-02 17:02:23.264 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.3294ms
+2023-08-02 17:02:23.269 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/lib/codemirror/mode/clike/clike.min.js - - - 404 0 - 5.4234ms
+2023-08-02 17:02:23.272 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 17:02:23.279 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 6.9976ms
+2023-08-02 17:02:23.343 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Problem/Get/1 - -
+2023-08-02 17:02:23.344 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - -
+2023-08-02 17:02:23.344 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Submission/GetProblemSubmissions?problemId=1&page=1&contestId=undefined - -
+2023-08-02 17:02:23.346 +02:00 [INF] Route matched with {action = "GetSubmissionsCount", controller = "Submission", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetSubmissionsCount(Int32, System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.SubmissionController (JudgeSystem.Web).
+2023-08-02 17:02:23.349 +02:00 [INF] Route matched with {action = "Get", controller = "Problem", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller JudgeSystem.Web.Controllers.ProblemController (JudgeSystem.Web).
+2023-08-02 17:02:23.349 +02:00 [INF] Route matched with {action = "GetProblemSubmissions", controller = "Submission", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProblemSubmissions(Int32, Int32, Int32, System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.SubmissionController (JudgeSystem.Web).
+2023-08-02 17:02:23.365 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.ProblemController.Get (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 17:02:23.389 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) - Validation state: "Invalid"
+2023-08-02 17:02:23.389 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.SubmissionController.GetProblemSubmissions (JudgeSystem.Web) - Validation state: "Invalid"
+2023-08-02 17:02:23.395 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[AllowedMemoryInMegaBytes], [p].[AllowedTimeInMilliseconds]
+FROM [Problems] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit) AND [p].[IsDeleted] = CAST(0 AS bit) AND [p].[Id] = @__id_0
+2023-08-02 17:02:23.396 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.ProblemController.Get (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 31.0418ms.
+2023-08-02 17:02:23.400 +02:00 [INF] Executing OkObjectResult, writing value of type 'JudgeSystem.Web.Dtos.Problem.ProblemConstraintsDto'.
+2023-08-02 17:02:23.405 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.ProblemController.Get (JudgeSystem.Web) in 56.0692ms
+2023-08-02 17:02:23.411 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__problemId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Submissions] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ProblemId] = @__problemId_0 AND [s].[UserId] = @__userId_1
+2023-08-02 17:02:23.411 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 21.5714ms.
+2023-08-02 17:02:23.412 +02:00 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2023-08-02 17:02:23.413 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) in 66.2773ms
+2023-08-02 17:02:23.414 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - -
+2023-08-02 17:02:23.414 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - - - 200 - application/json;+charset=utf-8 70.4720ms
+2023-08-02 17:02:23.417 +02:00 [INF] Route matched with {action = "GetSubmissionsCount", controller = "Submission", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetSubmissionsCount(Int32, System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.SubmissionController (JudgeSystem.Web).
+2023-08-02 17:02:23.431 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) - Validation state: "Invalid"
+2023-08-02 17:02:23.432 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__problemId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Submissions] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ProblemId] = @__problemId_0 AND [s].[UserId] = @__userId_1
+2023-08-02 17:02:23.432 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 0.8327ms.
+2023-08-02 17:02:23.432 +02:00 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2023-08-02 17:02:23.432 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) in 15.1638ms
+2023-08-02 17:02:23.434 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - - - 200 - application/json;+charset=utf-8 19.7449ms
+2023-08-02 17:02:23.442 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Problem/Get/1 - - - 200 - application/json;+charset=utf-8 98.2448ms
+2023-08-02 17:02:23.476 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@__problemId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ActualPoints], [t].[Code], [t].[CompilationErrors], [t].[ContestId], [t].[CreatedOn], [t].[DeletedOn], [t].[IsDeleted], [t].[ModifiedOn], [t].[PracticeId], [t].[ProblemId], [t].[SubmisionDate], [t].[UserId], [t0].[Id], [e0].[Id], [e0].[CreatedOn], [e0].[Error], [e0].[ExecutionResultType], [e0].[IsCorrect], [e0].[MemoryUsed], [e0].[ModifiedOn], [e0].[Output], [e0].[SubmissionId], [e0].[TestId], [e0].[TimeUsed], [t0].[AllowedMemoryInMegaBytes], [t0].[AllowedMinCodeDifferenceInPercentage], [t0].[AllowedTimeInMilliseconds], [t0].[AutomatedTestingProject], [t0].[CreatedOn], [t0].[DeletedOn], [t0].[IsDeleted], [t0].[IsExtraTask], [t0].[LessonId], [t0].[MaxPoints], [t0].[ModifiedOn], [t0].[Name], [t0].[OrderBy], [t0].[SubmissionType], [t0].[TestingStrategy], [t0].[TimeIntervalBetweenSubmissionInSeconds]
+FROM (
+    SELECT [s].[Id], [s].[ActualPoints], [s].[Code], [s].[CompilationErrors], [s].[ContestId], [s].[CreatedOn], [s].[DeletedOn], [s].[IsDeleted], [s].[ModifiedOn], [s].[PracticeId], [s].[ProblemId], [s].[SubmisionDate], [s].[UserId]
+    FROM [Submissions] AS [s]
+    WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ProblemId] = @__problemId_0 AND [s].[UserId] = @__userId_1 AND ((
+        SELECT COUNT(*)
+        FROM [ExecutedTests] AS [e]
+        WHERE [s].[Id] = [e].[SubmissionId]) > 0 OR ([s].[CompilationErrors] IS NOT NULL))
+    ORDER BY [s].[SubmisionDate] DESC
+    OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+) AS [t]
+INNER JOIN (
+    SELECT [p].[Id], [p].[AllowedMemoryInMegaBytes], [p].[AllowedMinCodeDifferenceInPercentage], [p].[AllowedTimeInMilliseconds], [p].[AutomatedTestingProject], [p].[CreatedOn], [p].[DeletedOn], [p].[IsDeleted], [p].[IsExtraTask], [p].[LessonId], [p].[MaxPoints], [p].[ModifiedOn], [p].[Name], [p].[OrderBy], [p].[SubmissionType], [p].[TestingStrategy], [p].[TimeIntervalBetweenSubmissionInSeconds]
+    FROM [Problems] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [t0] ON [t].[ProblemId] = [t0].[Id]
+LEFT JOIN [ExecutedTests] AS [e0] ON [t].[Id] = [e0].[SubmissionId]
+ORDER BY [t].[SubmisionDate] DESC, [t].[Id], [t0].[Id]
+2023-08-02 17:02:23.647 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.SubmissionController.GetProblemSubmissions (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 257.4961ms.
+2023-08-02 17:02:23.647 +02:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[JudgeSystem.Web.Dtos.Submission.SubmissionResult, JudgeSystem.Web.Dtos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-02 17:02:23.651 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.SubmissionController.GetProblemSubmissions (JudgeSystem.Web) in 301.3502ms
+2023-08-02 17:02:23.660 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Submission/GetProblemSubmissions?problemId=1&page=1&contestId=undefined - - - 200 - application/json;+charset=utf-8 316.3004ms
+2023-08-02 17:02:26.991 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Practice/Results/1 - -
+2023-08-02 17:02:26.993 +02:00 [INF] Route matched with {action = "Results", controller = "Practice", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Results(Int32, Int32) on controller JudgeSystem.Web.Controllers.PracticeController (JudgeSystem.Web).
+2023-08-02 17:02:27.006 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.PracticeController.Results (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 17:02:27.029 +02:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2023-08-02 17:02:27.049 +02:00 [INF] Executed DbCommand (15ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[Id], [t0].[CreatedOn], [t0].[DeletedOn], [t0].[IsDeleted], [t0].[LessonId], [t0].[ModifiedOn], [t0].[Id0], [t0].[CourseId], [t0].[CreatedOn0], [t0].[DeletedOn0], [t0].[IsDeleted0], [t0].[LessonPassword], [t0].[ModifiedOn0], [t0].[Name], [t0].[OrderBy], [t0].[Type], [t1].[Id], [t1].[AllowedMemoryInMegaBytes], [t1].[AllowedMinCodeDifferenceInPercentage], [t1].[AllowedTimeInMilliseconds], [t1].[AutomatedTestingProject], [t1].[CreatedOn], [t1].[DeletedOn], [t1].[IsDeleted], [t1].[IsExtraTask], [t1].[LessonId], [t1].[MaxPoints], [t1].[ModifiedOn], [t1].[Name], [t1].[OrderBy], [t1].[SubmissionType], [t1].[TestingStrategy], [t1].[TimeIntervalBetweenSubmissionInSeconds], [t2].[PracticeId], [t2].[UserId], [t2].[Id], [t2].[AccessFailedCount], [t2].[ConcurrencyStamp], [t2].[CreatedOn], [t2].[DeletedOn], [t2].[Email], [t2].[EmailConfirmed], [t2].[IsDeleted], [t2].[IsFromActiveDirectory], [t2].[LockoutEnabled], [t2].[LockoutEnd], [t2].[ModifiedOn], [t2].[Name], [t2].[NormalizedEmail], [t2].[NormalizedUserName], [t2].[PasswordHash], [t2].[PhoneNumber], [t2].[PhoneNumberConfirmed], [t2].[SecurityStamp], [t2].[StudentId], [t2].[Surname], [t2].[TwoFactorEnabled], [t2].[UserName], [t2].[Id0], [t2].[ActualPoints], [t2].[Code], [t2].[CompilationErrors], [t2].[ContestId], [t2].[CreatedOn0], [t2].[DeletedOn0], [t2].[IsDeleted0], [t2].[ModifiedOn0], [t2].[PracticeId0], [t2].[ProblemId], [t2].[SubmisionDate], [t2].[UserId0]
+FROM (
+    SELECT TOP(1) [p].[Id], [p].[CreatedOn], [p].[DeletedOn], [p].[IsDeleted], [p].[LessonId], [p].[ModifiedOn], [t].[Id] AS [Id0], [t].[CourseId], [t].[CreatedOn] AS [CreatedOn0], [t].[DeletedOn] AS [DeletedOn0], [t].[IsDeleted] AS [IsDeleted0], [t].[LessonPassword], [t].[ModifiedOn] AS [ModifiedOn0], [t].[Name], [t].[OrderBy], [t].[Type]
+    FROM [Practices] AS [p]
+    INNER JOIN (
+        SELECT [l].[Id], [l].[CourseId], [l].[CreatedOn], [l].[DeletedOn], [l].[IsDeleted], [l].[LessonPassword], [l].[ModifiedOn], [l].[Name], [l].[OrderBy], [l].[Type]
+        FROM [Lessons] AS [l]
+        WHERE [l].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t] ON [p].[LessonId] = [t].[Id]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit) AND [p].[IsDeleted] = CAST(0 AS bit) AND [p].[Id] = @__id_0
+) AS [t0]
+LEFT JOIN (
+    SELECT [p0].[Id], [p0].[AllowedMemoryInMegaBytes], [p0].[AllowedMinCodeDifferenceInPercentage], [p0].[AllowedTimeInMilliseconds], [p0].[AutomatedTestingProject], [p0].[CreatedOn], [p0].[DeletedOn], [p0].[IsDeleted], [p0].[IsExtraTask], [p0].[LessonId], [p0].[MaxPoints], [p0].[ModifiedOn], [p0].[Name], [p0].[OrderBy], [p0].[SubmissionType], [p0].[TestingStrategy], [p0].[TimeIntervalBetweenSubmissionInSeconds]
+    FROM [Problems] AS [p0]
+    WHERE [p0].[IsDeleted] = CAST(0 AS bit)
+) AS [t1] ON [t0].[Id0] = [t1].[LessonId]
+LEFT JOIN (
+    SELECT [u].[PracticeId], [u].[UserId], [t3].[Id], [t3].[AccessFailedCount], [t3].[ConcurrencyStamp], [t3].[CreatedOn], [t3].[DeletedOn], [t3].[Email], [t3].[EmailConfirmed], [t3].[IsDeleted], [t3].[IsFromActiveDirectory], [t3].[LockoutEnabled], [t3].[LockoutEnd], [t3].[ModifiedOn], [t3].[Name], [t3].[NormalizedEmail], [t3].[NormalizedUserName], [t3].[PasswordHash], [t3].[PhoneNumber], [t3].[PhoneNumberConfirmed], [t3].[SecurityStamp], [t3].[StudentId], [t3].[Surname], [t3].[TwoFactorEnabled], [t3].[UserName], [t4].[Id] AS [Id0], [t4].[ActualPoints], [t4].[Code], [t4].[CompilationErrors], [t4].[ContestId], [t4].[CreatedOn] AS [CreatedOn0], [t4].[DeletedOn] AS [DeletedOn0], [t4].[IsDeleted] AS [IsDeleted0], [t4].[ModifiedOn] AS [ModifiedOn0], [t4].[PracticeId] AS [PracticeId0], [t4].[ProblemId], [t4].[SubmisionDate], [t4].[UserId] AS [UserId0]
+    FROM [UserPractices] AS [u]
+    INNER JOIN (
+        SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[IsFromActiveDirectory], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedOn], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[StudentId], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t3] ON [u].[UserId] = [t3].[Id]
+    LEFT JOIN (
+        SELECT [s].[Id], [s].[ActualPoints], [s].[Code], [s].[CompilationErrors], [s].[ContestId], [s].[CreatedOn], [s].[DeletedOn], [s].[IsDeleted], [s].[ModifiedOn], [s].[PracticeId], [s].[ProblemId], [s].[SubmisionDate], [s].[UserId]
+        FROM [Submissions] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t4] ON [t3].[Id] = [t4].[UserId]
+) AS [t2] ON [t0].[Id] = [t2].[PracticeId]
+ORDER BY [t0].[Id], [t0].[Id0], [t1].[Id], [t2].[PracticeId], [t2].[UserId], [t2].[Id]
+2023-08-02 17:02:27.193 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [UserPractices] AS [u]
+WHERE [u].[PracticeId] = @__id_0
+2023-08-02 17:02:27.193 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.PracticeController.Results (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 187.7632ms.
+2023-08-02 17:02:27.194 +02:00 [INF] Executing ViewResult, running view Results.
+2023-08-02 17:02:27.205 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 17:02:27.211 +02:00 [INF] Executed ViewResult - view Results executed in 17.3723ms.
+2023-08-02 17:02:27.211 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.PracticeController.Results (JudgeSystem.Web) in 218.2286ms
+2023-08-02 17:02:27.220 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Practice/Results/1 - - - 200 - text/html;+charset=utf-8 229.0796ms
+2023-08-02 17:02:27.224 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 17:02:27.224 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.2254ms
+2023-08-02 17:02:27.230 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 17:02:27.234 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.5687ms
+2023-08-02 17:02:32.927 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Administration/Contest/All - -
+2023-08-02 17:02:32.938 +02:00 [INF] Route matched with {area = "Administration", action = "All", controller = "Contest", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult All(Int32) on controller JudgeSystem.Web.Areas.Administration.Controllers.ContestController (JudgeSystem.Web).
+2023-08-02 17:02:32.952 +02:00 [INF] Executing action method JudgeSystem.Web.Areas.Administration.Controllers.ContestController.All (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 17:02:32.956 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[EndTime], [c].[Id], [c].[Name], [c].[StartTime]
+FROM [Contests] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[StartTime] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-08-02 17:02:32.960 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contests] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+2023-08-02 17:02:32.960 +02:00 [INF] Executed action method JudgeSystem.Web.Areas.Administration.Controllers.ContestController.All (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.0407ms.
+2023-08-02 17:02:32.961 +02:00 [INF] Executing ViewResult, running view All.
+2023-08-02 17:02:32.974 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 17:02:32.980 +02:00 [INF] Executed ViewResult - view All executed in 20.2277ms.
+2023-08-02 17:02:32.980 +02:00 [INF] Executed action JudgeSystem.Web.Areas.Administration.Controllers.ContestController.All (JudgeSystem.Web) in 41.7839ms
+2023-08-02 17:02:32.984 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Administration/Contest/All - - - 200 - text/html;+charset=utf-8 56.3957ms
+2023-08-02 17:02:32.991 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 17:02:32.991 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.5455ms
+2023-08-02 17:02:32.997 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 17:02:33.002 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.4865ms
+2023-08-02 17:02:35.625 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Administration/Contest/Results/1 - -
+2023-08-02 17:02:35.636 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Administration/Contest/Results/1 - - - 404 0 - 11.2680ms
+2023-08-02 17:02:36.884 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Administration/Contest/All - -
+2023-08-02 17:02:36.885 +02:00 [INF] Route matched with {area = "Administration", action = "All", controller = "Contest", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult All(Int32) on controller JudgeSystem.Web.Areas.Administration.Controllers.ContestController (JudgeSystem.Web).
+2023-08-02 17:02:36.900 +02:00 [INF] Executing action method JudgeSystem.Web.Areas.Administration.Controllers.ContestController.All (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 17:02:36.901 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[EndTime], [c].[Id], [c].[Name], [c].[StartTime]
+FROM [Contests] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[StartTime] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2023-08-02 17:02:36.901 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Contests] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+2023-08-02 17:02:36.902 +02:00 [INF] Executed action method JudgeSystem.Web.Areas.Administration.Controllers.ContestController.All (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.2911ms.
+2023-08-02 17:02:36.902 +02:00 [INF] Executing ViewResult, running view All.
+2023-08-02 17:02:36.903 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 17:02:36.913 +02:00 [INF] Executed ViewResult - view All executed in 11.1693ms.
+2023-08-02 17:02:36.913 +02:00 [INF] Executed action JudgeSystem.Web.Areas.Administration.Controllers.ContestController.All (JudgeSystem.Web) in 27.3371ms
+2023-08-02 17:02:36.918 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Administration/Contest/All - - - 200 - text/html;+charset=utf-8 34.4730ms
+2023-08-02 17:02:36.931 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 17:02:36.931 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.3316ms
+2023-08-02 17:02:52.977 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Course/Lessons?courseId=1 - -
+2023-08-02 17:02:52.978 +02:00 [INF] Route matched with {action = "Lessons", controller = "Course", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Lessons(Int32) on controller JudgeSystem.Web.Controllers.CourseController (JudgeSystem.Web).
+2023-08-02 17:02:52.990 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.CourseController.Lessons (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 17:02:52.991 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__courseId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [t].[Id], [t0].[Id], [t0].[Name], [l].[CourseId], [l].[Name], (
+    SELECT COUNT(*)
+    FROM [Problems] AS [p0]
+    WHERE [p0].[IsDeleted] = CAST(0 AS bit) AND [l].[Id] = [p0].[LessonId]), [l].[Type]
+FROM [Lessons] AS [l]
+LEFT JOIN (
+    SELECT [p].[Id], [p].[LessonId]
+    FROM [Practices] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [l].[Id] = [t].[LessonId]
+LEFT JOIN (
+    SELECT [c].[Id], [c].[Name], [c].[LessonId]
+    FROM [Contests] AS [c]
+    WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[StartTime] < GETDATE() AND [c].[EndTime] > GETDATE()
+) AS [t0] ON [l].[Id] = [t0].[LessonId]
+WHERE [l].[IsDeleted] = CAST(0 AS bit) AND [l].[IsDeleted] = CAST(0 AS bit) AND [l].[CourseId] = @__courseId_0
+ORDER BY [l].[Id], [t].[Id]
+2023-08-02 17:02:52.992 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__courseId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Id] = @__courseId_0
+2023-08-02 17:02:52.992 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.CourseController.Lessons (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.3793ms.
+2023-08-02 17:02:52.992 +02:00 [INF] Executing ViewResult, running view Lessons.
+2023-08-02 17:02:52.993 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 17:02:53.002 +02:00 [INF] Executed ViewResult - view Lessons executed in 10.2369ms.
+2023-08-02 17:02:53.002 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.CourseController.Lessons (JudgeSystem.Web) in 23.8591ms
+2023-08-02 17:02:53.005 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Course/Lessons?courseId=1 - - - 200 - text/html;+charset=utf-8 28.6109ms
+2023-08-02 17:02:53.016 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 17:02:53.016 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.2327ms
+2023-08-02 17:02:53.023 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 17:02:53.028 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.5606ms
+2023-08-02 17:02:56.776 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Lesson/Details/1?practiceId=1 - -
+2023-08-02 17:02:56.777 +02:00 [INF] Route matched with {action = "Details", controller = "Lesson", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32, System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.LessonController (JudgeSystem.Web).
+2023-08-02 17:02:56.791 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 17:02:56.792 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[CourseId], [t0].[Id], [t0].[LessonPassword], [t0].[Name], [t0].[Id0], [t1].[AllowedMemoryInMegaBytes], [t1].[AllowedTimeInMilliseconds], [t1].[Id], [t1].[IsExtraTask], [t1].[MaxPoints], [t1].[Name], [t1].[SubmissionType], [r].[Id], [r].[Name]
+FROM (
+    SELECT TOP(1) [l].[CourseId], [l].[Id], [l].[LessonPassword], [l].[Name], [t].[Id] AS [Id0]
+    FROM [Lessons] AS [l]
+    LEFT JOIN (
+        SELECT [p].[Id], [p].[LessonId]
+        FROM [Practices] AS [p]
+        WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t] ON [l].[Id] = [t].[LessonId]
+    WHERE [l].[IsDeleted] = CAST(0 AS bit) AND [l].[IsDeleted] = CAST(0 AS bit) AND [l].[Id] = @__id_0
+) AS [t0]
+LEFT JOIN (
+    SELECT [p0].[AllowedMemoryInMegaBytes], [p0].[AllowedTimeInMilliseconds], [p0].[Id], [p0].[IsExtraTask], [p0].[MaxPoints], [p0].[Name], [p0].[SubmissionType], [p0].[LessonId]
+    FROM [Problems] AS [p0]
+    WHERE [p0].[IsDeleted] = CAST(0 AS bit)
+) AS [t1] ON [t0].[Id] = [t1].[LessonId]
+LEFT JOIN [Resources] AS [r] ON [t0].[Id] = [r].[LessonId]
+ORDER BY [t0].[Id], [t0].[Id0], [t1].[Id]
+2023-08-02 17:02:56.794 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450), @__practiceId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserPractices] AS [u]
+        WHERE [u].[UserId] = @__userId_0 AND [u].[PracticeId] = @__practiceId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:02:56.794 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 3.206ms.
+2023-08-02 17:02:56.794 +02:00 [INF] Executing ViewResult, running view Details.
+2023-08-02 17:02:56.796 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 17:02:56.804 +02:00 [INF] Executed ViewResult - view Details executed in 10.0622ms.
+2023-08-02 17:02:56.804 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web) in 26.9214ms
+2023-08-02 17:02:56.808 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Lesson/Details/1?practiceId=1 - - - 200 - text/html;+charset=utf-8 32.0151ms
+2023-08-02 17:02:56.813 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 17:02:56.813 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/lib/codemirror/mode/clike/clike.min.js - -
+2023-08-02 17:02:56.813 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.5059ms
+2023-08-02 17:02:56.817 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/lib/codemirror/mode/clike/clike.min.js - - - 404 0 - 3.9185ms
+2023-08-02 17:02:56.820 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 17:02:56.824 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.6567ms
+2023-08-02 17:02:56.881 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Problem/Get/1 - -
+2023-08-02 17:02:56.882 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - -
+2023-08-02 17:02:56.882 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Submission/GetProblemSubmissions?problemId=1&page=1&contestId=undefined - -
+2023-08-02 17:02:56.882 +02:00 [INF] Route matched with {action = "Get", controller = "Problem", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller JudgeSystem.Web.Controllers.ProblemController (JudgeSystem.Web).
+2023-08-02 17:02:56.882 +02:00 [INF] Route matched with {action = "GetSubmissionsCount", controller = "Submission", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetSubmissionsCount(Int32, System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.SubmissionController (JudgeSystem.Web).
+2023-08-02 17:02:56.883 +02:00 [INF] Route matched with {action = "GetProblemSubmissions", controller = "Submission", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProblemSubmissions(Int32, Int32, Int32, System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.SubmissionController (JudgeSystem.Web).
+2023-08-02 17:02:56.899 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) - Validation state: "Invalid"
+2023-08-02 17:02:56.913 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.ProblemController.Get (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 17:02:56.925 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.SubmissionController.GetProblemSubmissions (JudgeSystem.Web) - Validation state: "Invalid"
+2023-08-02 17:02:56.925 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__problemId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Submissions] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ProblemId] = @__problemId_0 AND [s].[UserId] = @__userId_1
+2023-08-02 17:02:56.925 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 25.3661ms.
+2023-08-02 17:02:56.926 +02:00 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2023-08-02 17:02:56.927 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) in 44.1892ms
+2023-08-02 17:02:56.928 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[AllowedMemoryInMegaBytes], [p].[AllowedTimeInMilliseconds]
+FROM [Problems] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit) AND [p].[IsDeleted] = CAST(0 AS bit) AND [p].[Id] = @__id_0
+2023-08-02 17:02:56.929 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.ProblemController.Get (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.8541ms.
+2023-08-02 17:02:56.929 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__problemId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ActualPoints], [t].[Code], [t].[CompilationErrors], [t].[ContestId], [t].[CreatedOn], [t].[DeletedOn], [t].[IsDeleted], [t].[ModifiedOn], [t].[PracticeId], [t].[ProblemId], [t].[SubmisionDate], [t].[UserId], [t0].[Id], [e0].[Id], [e0].[CreatedOn], [e0].[Error], [e0].[ExecutionResultType], [e0].[IsCorrect], [e0].[MemoryUsed], [e0].[ModifiedOn], [e0].[Output], [e0].[SubmissionId], [e0].[TestId], [e0].[TimeUsed], [t0].[AllowedMemoryInMegaBytes], [t0].[AllowedMinCodeDifferenceInPercentage], [t0].[AllowedTimeInMilliseconds], [t0].[AutomatedTestingProject], [t0].[CreatedOn], [t0].[DeletedOn], [t0].[IsDeleted], [t0].[IsExtraTask], [t0].[LessonId], [t0].[MaxPoints], [t0].[ModifiedOn], [t0].[Name], [t0].[OrderBy], [t0].[SubmissionType], [t0].[TestingStrategy], [t0].[TimeIntervalBetweenSubmissionInSeconds]
+FROM (
+    SELECT [s].[Id], [s].[ActualPoints], [s].[Code], [s].[CompilationErrors], [s].[ContestId], [s].[CreatedOn], [s].[DeletedOn], [s].[IsDeleted], [s].[ModifiedOn], [s].[PracticeId], [s].[ProblemId], [s].[SubmisionDate], [s].[UserId]
+    FROM [Submissions] AS [s]
+    WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ProblemId] = @__problemId_0 AND [s].[UserId] = @__userId_1 AND ((
+        SELECT COUNT(*)
+        FROM [ExecutedTests] AS [e]
+        WHERE [s].[Id] = [e].[SubmissionId]) > 0 OR ([s].[CompilationErrors] IS NOT NULL))
+    ORDER BY [s].[SubmisionDate] DESC
+    OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+) AS [t]
+INNER JOIN (
+    SELECT [p].[Id], [p].[AllowedMemoryInMegaBytes], [p].[AllowedMinCodeDifferenceInPercentage], [p].[AllowedTimeInMilliseconds], [p].[AutomatedTestingProject], [p].[CreatedOn], [p].[DeletedOn], [p].[IsDeleted], [p].[IsExtraTask], [p].[LessonId], [p].[MaxPoints], [p].[ModifiedOn], [p].[Name], [p].[OrderBy], [p].[SubmissionType], [p].[TestingStrategy], [p].[TimeIntervalBetweenSubmissionInSeconds]
+    FROM [Problems] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [t0] ON [t].[ProblemId] = [t0].[Id]
+LEFT JOIN [ExecutedTests] AS [e0] ON [t].[Id] = [e0].[SubmissionId]
+ORDER BY [t].[SubmisionDate] DESC, [t].[Id], [t0].[Id]
+2023-08-02 17:02:56.929 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - -
+2023-08-02 17:02:56.930 +02:00 [INF] Executing OkObjectResult, writing value of type 'JudgeSystem.Web.Dtos.Problem.ProblemConstraintsDto'.
+2023-08-02 17:02:56.934 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.ProblemController.Get (JudgeSystem.Web) in 51.533ms
+2023-08-02 17:02:56.943 +02:00 [INF] Route matched with {action = "GetSubmissionsCount", controller = "Submission", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetSubmissionsCount(Int32, System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.SubmissionController (JudgeSystem.Web).
+2023-08-02 17:02:56.944 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - - - 200 - application/json;+charset=utf-8 62.1370ms
+2023-08-02 17:02:56.962 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) - Validation state: "Invalid"
+2023-08-02 17:02:56.967 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__problemId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Submissions] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ProblemId] = @__problemId_0 AND [s].[UserId] = @__userId_1
+2023-08-02 17:02:56.967 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 4.8356ms.
+2023-08-02 17:02:56.967 +02:00 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2023-08-02 17:02:56.967 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Problem/Get/1 - - - 200 - application/json;+charset=utf-8 86.0563ms
+2023-08-02 17:02:56.967 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) in 24.1002ms
+2023-08-02 17:02:56.971 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - - - 200 - application/json;+charset=utf-8 41.2258ms
+2023-08-02 17:02:57.024 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.SubmissionController.GetProblemSubmissions (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 98.8262ms.
+2023-08-02 17:02:57.024 +02:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[JudgeSystem.Web.Dtos.Submission.SubmissionResult, JudgeSystem.Web.Dtos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-02 17:02:57.024 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.SubmissionController.GetProblemSubmissions (JudgeSystem.Web) in 141.0386ms
+2023-08-02 17:02:57.025 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Submission/GetProblemSubmissions?problemId=1&page=1&contestId=undefined - - - 200 - application/json;+charset=utf-8 143.6526ms
+2023-08-02 17:03:42.744 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Lesson/Details/1?practiceId=1 - -
+2023-08-02 17:03:42.745 +02:00 [INF] Route matched with {action = "Details", controller = "Lesson", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32, System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.LessonController (JudgeSystem.Web).
+2023-08-02 17:03:42.759 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 17:03:42.765 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[CourseId], [t0].[Id], [t0].[LessonPassword], [t0].[Name], [t0].[Id0], [t1].[AllowedMemoryInMegaBytes], [t1].[AllowedTimeInMilliseconds], [t1].[Id], [t1].[IsExtraTask], [t1].[MaxPoints], [t1].[Name], [t1].[SubmissionType], [r].[Id], [r].[Name]
+FROM (
+    SELECT TOP(1) [l].[CourseId], [l].[Id], [l].[LessonPassword], [l].[Name], [t].[Id] AS [Id0]
+    FROM [Lessons] AS [l]
+    LEFT JOIN (
+        SELECT [p].[Id], [p].[LessonId]
+        FROM [Practices] AS [p]
+        WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t] ON [l].[Id] = [t].[LessonId]
+    WHERE [l].[IsDeleted] = CAST(0 AS bit) AND [l].[IsDeleted] = CAST(0 AS bit) AND [l].[Id] = @__id_0
+) AS [t0]
+LEFT JOIN (
+    SELECT [p0].[AllowedMemoryInMegaBytes], [p0].[AllowedTimeInMilliseconds], [p0].[Id], [p0].[IsExtraTask], [p0].[MaxPoints], [p0].[Name], [p0].[SubmissionType], [p0].[LessonId]
+    FROM [Problems] AS [p0]
+    WHERE [p0].[IsDeleted] = CAST(0 AS bit)
+) AS [t1] ON [t0].[Id] = [t1].[LessonId]
+LEFT JOIN [Resources] AS [r] ON [t0].[Id] = [r].[LessonId]
+ORDER BY [t0].[Id], [t0].[Id0], [t1].[Id]
+2023-08-02 17:03:42.767 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450), @__practiceId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserPractices] AS [u]
+        WHERE [u].[UserId] = @__userId_0 AND [u].[PracticeId] = @__practiceId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:03:42.767 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 7.9698ms.
+2023-08-02 17:03:42.767 +02:00 [INF] Executing ViewResult, running view Details.
+2023-08-02 17:03:42.770 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 17:03:42.774 +02:00 [INF] Executed ViewResult - view Details executed in 6.9056ms.
+2023-08-02 17:03:42.774 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web) in 29.2106ms
+2023-08-02 17:03:42.784 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Lesson/Details/1?practiceId=1 - - - 200 - text/html;+charset=utf-8 39.7112ms
+2023-08-02 17:03:42.807 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 17:03:42.811 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 11.7121ms
+2023-08-02 17:03:42.811 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/lib/codemirror/mode/clike/clike.min.js - -
+2023-08-02 17:03:42.811 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 17:03:42.817 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/lib/codemirror/mode/clike/clike.min.js - - - 404 0 - 5.7773ms
+2023-08-02 17:03:42.828 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.6707ms
+2023-08-02 17:03:42.864 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/justice.ico - -
+2023-08-02 17:03:42.865 +02:00 [INF] The file /justice.ico was not modified
+2023-08-02 17:03:42.865 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/justice.ico - - - 304 - image/x-icon 0.8074ms
+2023-08-02 17:03:59.200 +02:00 [WRN] Entity 'AllowedIpAddress' has a global query filter defined and is the required end of a relationship with the entity 'AllowedIpAddressContest'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 17:03:59.234 +02:00 [WRN] Entity 'Submission' has a global query filter defined and is the required end of a relationship with the entity 'ExecutedTest'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 17:03:59.235 +02:00 [WRN] Entity 'Lesson' has a global query filter defined and is the required end of a relationship with the entity 'Resource'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 17:03:59.235 +02:00 [WRN] Entity 'SchoolClass' has a global query filter defined and is the required end of a relationship with the entity 'Student'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 17:03:59.235 +02:00 [WRN] Entity 'Problem' has a global query filter defined and is the required end of a relationship with the entity 'Test'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 17:03:59.235 +02:00 [WRN] Entity 'Contest' has a global query filter defined and is the required end of a relationship with the entity 'UserContest'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 17:03:59.235 +02:00 [WRN] Entity 'Practice' has a global query filter defined and is the required end of a relationship with the entity 'UserPractice'. This may lead to unexpected results when the required entity is filtered out. Either configure the navigation as optional, or define matching query filters for both entities in the navigation. See https://go.microsoft.com/fwlink/?linkid=2131316 for more information.
+2023-08-02 17:03:59.855 +02:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-02 17:03:59.897 +02:00 [INF] Executed DbCommand (22ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-08-02 17:03:59.900 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2023-08-02 17:03:59.900 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2023-08-02 17:03:59.916 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2023-08-02 17:03:59.939 +02:00 [INF] No migrations were applied. The database is already up to date.
+2023-08-02 17:04:00.417 +02:00 [INF] Executed DbCommand (53ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[IsDeleted], [a].[ModifiedOn], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedName] = @__normalizedName_0
+2023-08-02 17:04:00.503 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[IsDeleted], [a].[ModifiedOn], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedName] = @__normalizedName_0
+2023-08-02 17:04:00.505 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[IsDeleted], [a].[ModifiedOn], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedName] = @__normalizedName_0
+2023-08-02 17:04:00.512 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[IsDeleted], [a].[ModifiedOn], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedName] = @__normalizedName_0
+2023-08-02 17:04:00.547 +02:00 [INF] Seeder RolesSeeder done.
+2023-08-02 17:04:00.594 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.595 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.595 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.596 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.596 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.596 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.597 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.597 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.598 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.598 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.598 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.599 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.599 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.599 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.600 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.600 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.600 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.601 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.601 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.601 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.602 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.602 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.602 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.603 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.603 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__classNumber_0='?' (DbType = Int32), @__classType_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]
+        WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ClassNumber] = @__classNumber_0 AND [s].[ClassType] = @__classType_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:00.610 +02:00 [INF] Seeder SchoolClassesSeeder done.
+2023-08-02 17:04:00.626 +02:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-02 17:04:00.640 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedOn], [a].[DeletedOn], [a].[Email], [a].[EmailConfirmed], [a].[IsDeleted], [a].[IsFromActiveDirectory], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedOn], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[StudentId], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[IsDeleted] = CAST(0 AS bit) AND [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-08-02 17:04:00.697 +02:00 [INF] Seeder AdminSeeder done.
+2023-08-02 17:04:01.567 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/ - -
+2023-08-02 17:04:01.812 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller JudgeSystem.Web.Controllers.HomeController (JudgeSystem.Web).
+2023-08-02 17:04:01.974 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.HomeController.Index (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 17:04:01.978 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.HomeController.Index (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.5479ms.
+2023-08-02 17:04:01.988 +02:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 17:04:02.122 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[EndTime], [c].[Id], [c].[LessonId], [c].[Name]
+FROM [Contests] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit) AND [c].[StartTime] < @__now_0 AND [c].[EndTime] > @__now_0
+2023-08-02 17:04:02.248 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[EndTime], [c].[LessonId], [t0].[Id], [c].[Name]
+FROM [Contests] AS [c]
+INNER JOIN (
+    SELECT [l].[Id]
+    FROM [Lessons] AS [l]
+    WHERE [l].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [c].[LessonId] = [t].[Id]
+LEFT JOIN (
+    SELECT [p].[Id], [p].[LessonId]
+    FROM [Practices] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [t0] ON [t].[Id] = [t0].[LessonId]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit) AND [c].[EndTime] < GETDATE() AND [c].[EndTime] >= DATEADD(day, CAST(@__p_0 AS int), GETDATE())
+2023-08-02 17:04:02.543 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[PracticeId]
+FROM [UserPractices] AS [u]
+WHERE [u].[UserId] = @__userId_0
+2023-08-02 17:04:02.556 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [l].[Name], [t].[Id] AS [PracticeId], [l].[Type]
+FROM [Lessons] AS [l]
+LEFT JOIN (
+    SELECT [p].[Id], [p].[LessonId]
+    FROM [Practices] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [l].[Id] = [t].[LessonId]
+WHERE [l].[IsDeleted] = CAST(0 AS bit) AND [l].[IsDeleted] = CAST(0 AS bit) AND ([t].[Id] <> 1 OR ([t].[Id] IS NULL))
+2023-08-02 17:04:02.651 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 17:04:02.768 +02:00 [INF] Executed ViewResult - view Index executed in 783.151ms.
+2023-08-02 17:04:02.774 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.HomeController.Index (JudgeSystem.Web) in 962.0754ms
+2023-08-02 17:04:02.831 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 17:04:02.833 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/ - - - 200 - text/html;+charset=utf-8 1271.5484ms
+2023-08-02 17:04:02.836 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 4.5612ms
+2023-08-02 17:04:02.850 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 17:04:02.877 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 27.1967ms
+2023-08-02 17:04:04.017 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Lesson/Details/1?practiceId=1 - -
+2023-08-02 17:04:04.034 +02:00 [INF] Route matched with {action = "Details", controller = "Lesson", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Details(Int32, System.Nullable`1[System.Int32], System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.LessonController (JudgeSystem.Web).
+2023-08-02 17:04:04.069 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 17:04:04.139 +02:00 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+2023-08-02 17:04:04.144 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t0].[CourseId], [t0].[Id], [t0].[LessonPassword], [t0].[Name], [t0].[Id0], [t1].[AllowedMemoryInMegaBytes], [t1].[AllowedTimeInMilliseconds], [t1].[Id], [t1].[IsExtraTask], [t1].[MaxPoints], [t1].[Name], [t1].[SubmissionType], [r].[Id], [r].[Name]
+FROM (
+    SELECT TOP(1) [l].[CourseId], [l].[Id], [l].[LessonPassword], [l].[Name], [t].[Id] AS [Id0]
+    FROM [Lessons] AS [l]
+    LEFT JOIN (
+        SELECT [p].[Id], [p].[LessonId]
+        FROM [Practices] AS [p]
+        WHERE [p].[IsDeleted] = CAST(0 AS bit)
+    ) AS [t] ON [l].[Id] = [t].[LessonId]
+    WHERE [l].[IsDeleted] = CAST(0 AS bit) AND [l].[IsDeleted] = CAST(0 AS bit) AND [l].[Id] = @__id_0
+) AS [t0]
+LEFT JOIN (
+    SELECT [p0].[AllowedMemoryInMegaBytes], [p0].[AllowedTimeInMilliseconds], [p0].[Id], [p0].[IsExtraTask], [p0].[MaxPoints], [p0].[Name], [p0].[SubmissionType], [p0].[LessonId]
+    FROM [Problems] AS [p0]
+    WHERE [p0].[IsDeleted] = CAST(0 AS bit)
+) AS [t1] ON [t0].[Id] = [t1].[LessonId]
+LEFT JOIN [Resources] AS [r] ON [t0].[Id] = [r].[LessonId]
+ORDER BY [t0].[Id], [t0].[Id0], [t1].[Id]
+2023-08-02 17:04:04.158 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__userId_0='?' (Size = 450), @__practiceId_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [UserPractices] AS [u]
+        WHERE [u].[UserId] = @__userId_0 AND [u].[PracticeId] = @__practiceId_1) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-08-02 17:04:04.160 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 91.1009ms.
+2023-08-02 17:04:04.164 +02:00 [INF] Executing ViewResult, running view Details.
+2023-08-02 17:04:04.201 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 17:04:04.216 +02:00 [INF] Executed ViewResult - view Details executed in 52.9245ms.
+2023-08-02 17:04:04.216 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.LessonController.Details (JudgeSystem.Web) in 182.4925ms
+2023-08-02 17:04:04.227 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Lesson/Details/1?practiceId=1 - - - 200 - text/html;+charset=utf-8 210.3319ms
+2023-08-02 17:04:04.248 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/lib/codemirror/mode/clike/clike.min.js - -
+2023-08-02 17:04:04.248 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 17:04:04.249 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 17:04:04.250 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 1.9247ms
+2023-08-02 17:04:04.261 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.8744ms
+2023-08-02 17:04:04.272 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/lib/codemirror/mode/clike/clike.min.js - - - 404 0 - 24.1084ms
+2023-08-02 17:04:04.315 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Problem/Get/1 - -
+2023-08-02 17:04:04.318 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Submission/GetProblemSubmissions?problemId=1&page=1&contestId=undefined - -
+2023-08-02 17:04:04.318 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - -
+2023-08-02 17:04:04.321 +02:00 [INF] Route matched with {action = "Get", controller = "Problem", area = "", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller JudgeSystem.Web.Controllers.ProblemController (JudgeSystem.Web).
+2023-08-02 17:04:04.322 +02:00 [INF] Route matched with {action = "GetSubmissionsCount", controller = "Submission", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetSubmissionsCount(Int32, System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.SubmissionController (JudgeSystem.Web).
+2023-08-02 17:04:04.345 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.ProblemController.Get (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 17:04:04.345 +02:00 [INF] Route matched with {action = "GetProblemSubmissions", controller = "Submission", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProblemSubmissions(Int32, Int32, Int32, System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.SubmissionController (JudgeSystem.Web).
+2023-08-02 17:04:04.375 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.SubmissionController.GetProblemSubmissions (JudgeSystem.Web) - Validation state: "Invalid"
+2023-08-02 17:04:04.375 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) - Validation state: "Invalid"
+2023-08-02 17:04:04.383 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[AllowedMemoryInMegaBytes], [p].[AllowedTimeInMilliseconds]
+FROM [Problems] AS [p]
+WHERE [p].[IsDeleted] = CAST(0 AS bit) AND [p].[IsDeleted] = CAST(0 AS bit) AND [p].[Id] = @__id_0
+2023-08-02 17:04:04.384 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.ProblemController.Get (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 39.1869ms.
+2023-08-02 17:04:04.389 +02:00 [INF] Executing OkObjectResult, writing value of type 'JudgeSystem.Web.Dtos.Problem.ProblemConstraintsDto'.
+2023-08-02 17:04:04.395 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.ProblemController.Get (JudgeSystem.Web) in 74.094ms
+2023-08-02 17:04:04.398 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Problem/Get/1 - - - 200 - application/json;+charset=utf-8 82.6677ms
+2023-08-02 17:04:04.419 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__problemId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Submissions] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ProblemId] = @__problemId_0 AND [s].[UserId] = @__userId_1
+2023-08-02 17:04:04.419 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 43.6222ms.
+2023-08-02 17:04:04.420 +02:00 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2023-08-02 17:04:04.421 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) in 99.1279ms
+2023-08-02 17:04:04.422 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - -
+2023-08-02 17:04:04.422 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - - - 200 - application/json;+charset=utf-8 104.6159ms
+2023-08-02 17:04:04.425 +02:00 [INF] Route matched with {action = "GetSubmissionsCount", controller = "Submission", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetSubmissionsCount(Int32, System.Nullable`1[System.Int32]) on controller JudgeSystem.Web.Controllers.SubmissionController (JudgeSystem.Web).
+2023-08-02 17:04:04.445 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) - Validation state: "Invalid"
+2023-08-02 17:04:04.446 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__problemId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Submissions] AS [s]
+WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ProblemId] = @__problemId_0 AND [s].[UserId] = @__userId_1
+2023-08-02 17:04:04.446 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 0.8244ms.
+2023-08-02 17:04:04.446 +02:00 [INF] Executing JsonResult, writing value of type 'System.Int32'.
+2023-08-02 17:04:04.447 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.SubmissionController.GetSubmissionsCount (JudgeSystem.Web) in 21.1361ms
+2023-08-02 17:04:04.448 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Submission/GetSubmissionsCount?problemId=1&contestId=undefined - - - 200 - application/json;+charset=utf-8 25.6749ms
+2023-08-02 17:04:04.474 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@__problemId_0='?' (DbType = Int32), @__userId_1='?' (Size = 450), @__p_2='?' (DbType = Int32), @__p_3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ActualPoints], [t].[Code], [t].[CompilationErrors], [t].[ContestId], [t].[CreatedOn], [t].[DeletedOn], [t].[IsDeleted], [t].[ModifiedOn], [t].[PracticeId], [t].[ProblemId], [t].[SubmisionDate], [t].[UserId], [t0].[Id], [e0].[Id], [e0].[CreatedOn], [e0].[Error], [e0].[ExecutionResultType], [e0].[IsCorrect], [e0].[MemoryUsed], [e0].[ModifiedOn], [e0].[Output], [e0].[SubmissionId], [e0].[TestId], [e0].[TimeUsed], [t0].[AllowedMemoryInMegaBytes], [t0].[AllowedMinCodeDifferenceInPercentage], [t0].[AllowedTimeInMilliseconds], [t0].[AutomatedTestingProject], [t0].[CreatedOn], [t0].[DeletedOn], [t0].[IsDeleted], [t0].[IsExtraTask], [t0].[LessonId], [t0].[MaxPoints], [t0].[ModifiedOn], [t0].[Name], [t0].[OrderBy], [t0].[SubmissionType], [t0].[TestingStrategy], [t0].[TimeIntervalBetweenSubmissionInSeconds]
+FROM (
+    SELECT [s].[Id], [s].[ActualPoints], [s].[Code], [s].[CompilationErrors], [s].[ContestId], [s].[CreatedOn], [s].[DeletedOn], [s].[IsDeleted], [s].[ModifiedOn], [s].[PracticeId], [s].[ProblemId], [s].[SubmisionDate], [s].[UserId]
+    FROM [Submissions] AS [s]
+    WHERE [s].[IsDeleted] = CAST(0 AS bit) AND [s].[IsDeleted] = CAST(0 AS bit) AND [s].[ProblemId] = @__problemId_0 AND [s].[UserId] = @__userId_1 AND ((
+        SELECT COUNT(*)
+        FROM [ExecutedTests] AS [e]
+        WHERE [s].[Id] = [e].[SubmissionId]) > 0 OR ([s].[CompilationErrors] IS NOT NULL))
+    ORDER BY [s].[SubmisionDate] DESC
+    OFFSET @__p_2 ROWS FETCH NEXT @__p_3 ROWS ONLY
+) AS [t]
+INNER JOIN (
+    SELECT [p].[Id], [p].[AllowedMemoryInMegaBytes], [p].[AllowedMinCodeDifferenceInPercentage], [p].[AllowedTimeInMilliseconds], [p].[AutomatedTestingProject], [p].[CreatedOn], [p].[DeletedOn], [p].[IsDeleted], [p].[IsExtraTask], [p].[LessonId], [p].[MaxPoints], [p].[ModifiedOn], [p].[Name], [p].[OrderBy], [p].[SubmissionType], [p].[TestingStrategy], [p].[TimeIntervalBetweenSubmissionInSeconds]
+    FROM [Problems] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [t0] ON [t].[ProblemId] = [t0].[Id]
+LEFT JOIN [ExecutedTests] AS [e0] ON [t].[Id] = [e0].[SubmissionId]
+ORDER BY [t].[SubmisionDate] DESC, [t].[Id], [t0].[Id]
+2023-08-02 17:04:04.636 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.SubmissionController.GetProblemSubmissions (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.JsonResult in 260.4913ms.
+2023-08-02 17:04:04.636 +02:00 [INF] Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[JudgeSystem.Web.Dtos.Submission.SubmissionResult, JudgeSystem.Web.Dtos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-02 17:04:04.640 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.SubmissionController.GetProblemSubmissions (JudgeSystem.Web) in 294.4341ms
+2023-08-02 17:04:04.649 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Submission/GetProblemSubmissions?problemId=1&page=1&contestId=undefined - - - 200 - application/json;+charset=utf-8 331.2916ms
+2023-08-02 17:04:11.244 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/Course/Lessons?courseId=1 - -
+2023-08-02 17:04:11.247 +02:00 [INF] Route matched with {action = "Lessons", controller = "Course", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Lessons(Int32) on controller JudgeSystem.Web.Controllers.CourseController (JudgeSystem.Web).
+2023-08-02 17:04:11.261 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.CourseController.Lessons (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 17:04:11.279 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@__courseId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [l].[Id], [t].[Id], [t0].[Id], [t0].[Name], [l].[CourseId], [l].[Name], (
+    SELECT COUNT(*)
+    FROM [Problems] AS [p0]
+    WHERE [p0].[IsDeleted] = CAST(0 AS bit) AND [l].[Id] = [p0].[LessonId]), [l].[Type]
+FROM [Lessons] AS [l]
+LEFT JOIN (
+    SELECT [p].[Id], [p].[LessonId]
+    FROM [Practices] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [l].[Id] = [t].[LessonId]
+LEFT JOIN (
+    SELECT [c].[Id], [c].[Name], [c].[LessonId]
+    FROM [Contests] AS [c]
+    WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[StartTime] < GETDATE() AND [c].[EndTime] > GETDATE()
+) AS [t0] ON [l].[Id] = [t0].[LessonId]
+WHERE [l].[IsDeleted] = CAST(0 AS bit) AND [l].[IsDeleted] = CAST(0 AS bit) AND [l].[CourseId] = @__courseId_0
+ORDER BY [l].[Id], [t].[Id]
+2023-08-02 17:04:11.283 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__courseId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit) AND [c].[Id] = @__courseId_0
+2023-08-02 17:04:11.284 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.CourseController.Lessons (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 22.789ms.
+2023-08-02 17:04:11.284 +02:00 [INF] Executing ViewResult, running view Lessons.
+2023-08-02 17:04:11.304 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 17:04:11.320 +02:00 [INF] Executed ViewResult - view Lessons executed in 36.5373ms.
+2023-08-02 17:04:11.321 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.CourseController.Lessons (JudgeSystem.Web) in 73.8574ms
+2023-08-02 17:04:11.324 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/Course/Lessons?courseId=1 - - - 200 - text/html;+charset=utf-8 80.1117ms
+2023-08-02 17:04:11.328 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 17:04:11.328 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.2295ms
+2023-08-02 17:04:11.334 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 17:04:11.345 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.8364ms
+2023-08-02 17:04:12.042 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/ - -
+2023-08-02 17:04:12.044 +02:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller JudgeSystem.Web.Controllers.HomeController (JudgeSystem.Web).
+2023-08-02 17:04:12.056 +02:00 [INF] Executing action method JudgeSystem.Web.Controllers.HomeController.Index (JudgeSystem.Web) - Validation state: "Valid"
+2023-08-02 17:04:12.056 +02:00 [INF] Executed action method JudgeSystem.Web.Controllers.HomeController.Index (JudgeSystem.Web), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.0125ms.
+2023-08-02 17:04:12.056 +02:00 [INF] Executing ViewResult, running view Index.
+2023-08-02 17:04:12.060 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__now_0='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[EndTime], [c].[Id], [c].[LessonId], [c].[Name]
+FROM [Contests] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit) AND [c].[StartTime] < @__now_0 AND [c].[EndTime] > @__now_0
+2023-08-02 17:04:12.062 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[EndTime], [c].[LessonId], [t0].[Id], [c].[Name]
+FROM [Contests] AS [c]
+INNER JOIN (
+    SELECT [l].[Id]
+    FROM [Lessons] AS [l]
+    WHERE [l].[IsDeleted] = CAST(0 AS bit)
+) AS [t] ON [c].[LessonId] = [t].[Id]
+LEFT JOIN (
+    SELECT [p].[Id], [p].[LessonId]
+    FROM [Practices] AS [p]
+    WHERE [p].[IsDeleted] = CAST(0 AS bit)
+) AS [t0] ON [t].[Id] = [t0].[LessonId]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit) AND [c].[EndTime] < GETDATE() AND [c].[EndTime] >= DATEADD(day, CAST(@__p_0 AS int), GETDATE())
+2023-08-02 17:04:12.063 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Courses] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit) AND [c].[IsDeleted] = CAST(0 AS bit)
+ORDER BY [c].[OrderBy]
+2023-08-02 17:04:12.067 +02:00 [INF] Executed ViewResult - view Index executed in 10.4436ms.
+2023-08-02 17:04:12.067 +02:00 [INF] Executed action JudgeSystem.Web.Controllers.HomeController.Index (JudgeSystem.Web) in 22.9162ms
+2023-08-02 17:04:12.077 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/ - - - 200 - text/html;+charset=utf-8 34.4638ms
+2023-08-02 17:04:12.081 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - -
+2023-08-02 17:04:12.081 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 0.2268ms
+2023-08-02 17:04:12.087 +02:00 [INF] Request starting HTTP/2 GET https://localhost:63358/_vs/browserLink - -
+2023-08-02 17:04:12.091 +02:00 [INF] Request finished HTTP/2 GET https://localhost:63358/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.7618ms

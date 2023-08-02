@@ -24,6 +24,7 @@ namespace JudgeSystem.Web.Configuration
 
             CompilationSettings.JavaCompilerPath = compilersSection[nameof(ProgrammingLanguage.Java)];
             CompilationSettings.CppCompilerPath = compilersSection[nameof(ProgrammingLanguage.CPlusPlus)];
+            CompilationSettings.PythonCompilerPath = compilersSection[nameof(ProgrammingLanguage.Python)];
             SetWorkingDirectory(configuration);
         }
 
